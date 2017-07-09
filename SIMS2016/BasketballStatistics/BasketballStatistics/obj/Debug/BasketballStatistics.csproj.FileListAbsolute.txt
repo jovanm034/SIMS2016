@@ -11,3 +11,16 @@ D:\Projects\Visual Studio\PRO-Stats\BasketballStatistics\BasketballStatistics\bi
 D:\Projects\Visual Studio\PRO-Stats\BasketballStatistics\BasketballStatistics\bin\Debug\Model.pdb
 D:\Projects\Visual Studio\PRO-Stats\BasketballStatistics\BasketballStatistics\bin\Debug\Servisi.pdb
 D:\Projects\Visual Studio\PRO-Stats\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.GlavnaForma.resources
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\BasketballStatistics.exe.config
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.exe
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.pdb
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\BasketballStatistics.exe
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\BasketballStatistics.pdb
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\Model.dll
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\Servisi.dll
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\Model.pdb
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\Servisi.pdb
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.csprojResolveAssemblyReference.cache
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.GlavnaForma.resources
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.Properties.Resources.resources
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.csproj.GenerateResource.Cache

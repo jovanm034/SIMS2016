@@ -37,6 +37,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button27 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
@@ -78,7 +80,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -163,12 +164,28 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Location = new System.Drawing.Point(23, 24);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1075, 536);
             this.panel2.TabIndex = 2;
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(13, 44);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1050, 481);
+            this.panel4.TabIndex = 1;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(966, 9);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 29);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Odjavi se";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel3
             // 
@@ -224,7 +241,7 @@
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(136, 28);
             this.button27.TabIndex = 39;
-            this.button27.Text = "button27";
+            this.button27.Text = "Deaktiviraj klijenta";
             this.button27.UseVisualStyleBackColor = true;
             // 
             // button28
@@ -233,7 +250,7 @@
             this.button28.Name = "button28";
             this.button28.Size = new System.Drawing.Size(136, 28);
             this.button28.TabIndex = 38;
-            this.button28.Text = "button28";
+            this.button28.Text = "Aktiviraj klijenta";
             this.button28.UseVisualStyleBackColor = true;
             // 
             // button24
@@ -242,7 +259,7 @@
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(136, 28);
             this.button24.TabIndex = 37;
-            this.button24.Text = "button24";
+            this.button24.Text = "Obrisi statisticara";
             this.button24.UseVisualStyleBackColor = true;
             // 
             // button25
@@ -251,7 +268,7 @@
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(136, 28);
             this.button25.TabIndex = 36;
-            this.button25.Text = "button25";
+            this.button25.Text = "Izmeni statisticara";
             this.button25.UseVisualStyleBackColor = true;
             // 
             // button26
@@ -260,7 +277,7 @@
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(136, 28);
             this.button26.TabIndex = 35;
-            this.button26.Text = "button26";
+            this.button26.Text = "Dodaj statisticara";
             this.button26.UseVisualStyleBackColor = true;
             // 
             // button21
@@ -269,7 +286,7 @@
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(136, 28);
             this.button21.TabIndex = 34;
-            this.button21.Text = "button21";
+            this.button21.Text = "Obrisi trenera";
             this.button21.UseVisualStyleBackColor = true;
             // 
             // button22
@@ -278,7 +295,7 @@
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(136, 28);
             this.button22.TabIndex = 33;
-            this.button22.Text = "button22";
+            this.button22.Text = "Izmeni trenera";
             this.button22.UseVisualStyleBackColor = true;
             // 
             // button23
@@ -287,7 +304,7 @@
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(136, 28);
             this.button23.TabIndex = 32;
-            this.button23.Text = "button23";
+            this.button23.Text = "Dodaj trenera";
             this.button23.UseVisualStyleBackColor = true;
             // 
             // button18
@@ -296,7 +313,7 @@
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(136, 28);
             this.button18.TabIndex = 31;
-            this.button18.Text = "button18";
+            this.button18.Text = "Obrisi sudiju";
             this.button18.UseVisualStyleBackColor = true;
             // 
             // button19
@@ -305,7 +322,7 @@
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(136, 28);
             this.button19.TabIndex = 30;
-            this.button19.Text = "button19";
+            this.button19.Text = "Izmeni sudiju";
             this.button19.UseVisualStyleBackColor = true;
             // 
             // button20
@@ -314,7 +331,7 @@
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(136, 28);
             this.button20.TabIndex = 29;
-            this.button20.Text = "button20";
+            this.button20.Text = "Dodaj sudiju";
             this.button20.UseVisualStyleBackColor = true;
             // 
             // button12
@@ -323,7 +340,7 @@
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(136, 28);
             this.button12.TabIndex = 28;
-            this.button12.Text = "button12";
+            this.button12.Text = "Obrisi ligu";
             this.button12.UseVisualStyleBackColor = true;
             // 
             // button13
@@ -332,7 +349,7 @@
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(136, 28);
             this.button13.TabIndex = 27;
-            this.button13.Text = "button13";
+            this.button13.Text = "Izmeni ligu";
             this.button13.UseVisualStyleBackColor = true;
             // 
             // button14
@@ -341,7 +358,7 @@
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(136, 28);
             this.button14.TabIndex = 26;
-            this.button14.Text = "button14";
+            this.button14.Text = "Dodaj ligu";
             this.button14.UseVisualStyleBackColor = true;
             // 
             // button15
@@ -350,7 +367,7 @@
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(136, 28);
             this.button15.TabIndex = 25;
-            this.button15.Text = "button15";
+            this.button15.Text = "Obrisi kup";
             this.button15.UseVisualStyleBackColor = true;
             // 
             // button16
@@ -359,7 +376,7 @@
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(136, 28);
             this.button16.TabIndex = 24;
-            this.button16.Text = "button16";
+            this.button16.Text = "Izmeni kup";
             this.button16.UseVisualStyleBackColor = true;
             // 
             // button17
@@ -368,7 +385,7 @@
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(136, 28);
             this.button17.TabIndex = 23;
-            this.button17.Text = "button17";
+            this.button17.Text = "Dodaj kup";
             this.button17.UseVisualStyleBackColor = true;
             // 
             // button11
@@ -377,7 +394,7 @@
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(136, 28);
             this.button11.TabIndex = 22;
-            this.button11.Text = "button11";
+            this.button11.Text = "Obrisi klub";
             this.button11.UseVisualStyleBackColor = true;
             // 
             // button10
@@ -386,7 +403,7 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(136, 28);
             this.button10.TabIndex = 21;
-            this.button10.Text = "button10";
+            this.button10.Text = "Izmeni klub";
             this.button10.UseVisualStyleBackColor = true;
             // 
             // button9
@@ -395,7 +412,7 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(136, 28);
             this.button9.TabIndex = 20;
-            this.button9.Text = "button9";
+            this.button9.Text = "Dodaj klub";
             this.button9.UseVisualStyleBackColor = true;
             // 
             // button8
@@ -404,7 +421,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(136, 28);
             this.button8.TabIndex = 19;
-            this.button8.Text = "button8";
+            this.button8.Text = "Obrisi reprezentaciju";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // button7
@@ -413,7 +430,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(136, 28);
             this.button7.TabIndex = 18;
-            this.button7.Text = "button7";
+            this.button7.Text = "Izmeni reprezentaciju";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // button6
@@ -422,7 +439,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(136, 28);
             this.button6.TabIndex = 17;
-            this.button6.Text = "button6";
+            this.button6.Text = "Dodaj reprezentaciju";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button5
@@ -431,7 +448,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(136, 28);
             this.button5.TabIndex = 16;
-            this.button5.Text = "button5";
+            this.button5.Text = "Obrisi igraca";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -440,7 +457,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(136, 28);
             this.button4.TabIndex = 15;
-            this.button4.Text = "button4";
+            this.button4.Text = "Izmeni igraca";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -449,7 +466,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(136, 28);
             this.button3.TabIndex = 14;
-            this.button3.Text = "button3";
+            this.button3.Text = "Dodaj igraca";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // pictureBox7
@@ -593,15 +610,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(966, 9);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 29);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Odjavi se";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // GlavnaForma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -679,6 +687,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel panel4;
     }
 }
 

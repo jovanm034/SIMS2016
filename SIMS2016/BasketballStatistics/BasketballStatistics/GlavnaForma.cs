@@ -51,14 +51,20 @@ namespace BasketballStatistics
             else
             {
                 this.Controls.Remove(this.panel1);
+                this.textBox1.Text = "";
+                this.textBox2.Text = "";
 
                 if (Aplikacija.PrijavljeniKorisnik.GetType().Equals(typeof(Administrator)))
                 {
                     this.Controls.Add(this.panel2);
+                    this.panel2.Controls.Add(this.panel3);
+                    Console.WriteLine("ADMIN!");
                     //Prikazi panel za administratora
                 }
                 else if (Aplikacija.PrijavljeniKorisnik.GetType().Equals(typeof(Statisticar)))
                 {
+                    this.Controls.Add(this.panel2);
+                    this.panel2.Controls.Add(this.panel4);
                     //Prikazi panel za statisticara
                 }
                 else if (Aplikacija.PrijavljeniKorisnik.GetType().Equals(typeof(Klijent)))
@@ -70,9 +76,14 @@ namespace BasketballStatistics
 
         private void label3_Click(object sender, EventArgs e)
         {
-            this.panel1.Hide();
+            this.Controls.Remove(this.panel1);
             //Prikazi panel za registraciju klijenta
         }
-        
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Controls.Remove(this.panel2);
+            this.Controls.Add(this.panel1);
+        }
     }
 }
