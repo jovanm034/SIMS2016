@@ -1,0 +1,7 @@
+D:\Projects\Visual Studio\PRO-Stats\BasketballStatistics\Servisi\bin\Debug\Servisi.dll
+D:\Projects\Visual Studio\PRO-Stats\BasketballStatistics\Servisi\bin\Debug\Servisi.pdb
+D:\Projects\Visual Studio\PRO-Stats\BasketballStatistics\Servisi\bin\Debug\Model.dll
+D:\Projects\Visual Studio\PRO-Stats\BasketballStatistics\Servisi\bin\Debug\Model.pdb
+D:\Projects\Visual Studio\PRO-Stats\BasketballStatistics\Servisi\obj\Debug\Servisi.csprojResolveAssemblyReference.cache
+D:\Projects\Visual Studio\PRO-Stats\BasketballStatistics\Servisi\obj\Debug\Servisi.dll
+D:\Projects\Visual Studio\PRO-Stats\BasketballStatistics\Servisi\obj\Debug\Servisi.pdb

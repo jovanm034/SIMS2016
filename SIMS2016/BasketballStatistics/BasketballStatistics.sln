@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasketballStatistics", "BasketballStatistics\BasketballStatistics.csproj", "{66624916-FA16-437A-A5EB-E4C35D48E2DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{36FC6B5D-8F00-457A-BA33-7403B65715B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servisi", "Servisi\Servisi.csproj", "{36B35B39-B182-4631-A081-E5F2381B8B4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66624916-FA16-437A-A5EB-E4C35D48E2DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66624916-FA16-437A-A5EB-E4C35D48E2DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66624916-FA16-437A-A5EB-E4C35D48E2DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66624916-FA16-437A-A5EB-E4C35D48E2DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36FC6B5D-8F00-457A-BA33-7403B65715B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36FC6B5D-8F00-457A-BA33-7403B65715B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36FC6B5D-8F00-457A-BA33-7403B65715B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36FC6B5D-8F00-457A-BA33-7403B65715B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36B35B39-B182-4631-A081-E5F2381B8B4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36B35B39-B182-4631-A081-E5F2381B8B4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36B35B39-B182-4631-A081-E5F2381B8B4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36B35B39-B182-4631-A081-E5F2381B8B4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
