@@ -19,7 +19,7 @@ namespace Model
             this.godinaOsnivanja = 0;
         }
 
-        public Klub(String naziv, String grad, String drzava, int godinaOsnivanja, Dictionary<String, Igrac> igraci, Trener trener, Dictionary<String, List<Takmicenje>> takmicenja) : base(naziv, igraci, trener, takmicenja)
+        public Klub(String naziv, String grad, String drzava, int godinaOsnivanja, Dictionary<String, Igrac> igraci, Trener trener, Dictionary<String, Takmicenje> takmicenja) : base(naziv, igraci, trener, takmicenja)
         {
             this.grad = grad;
             this.drzava = drzava;

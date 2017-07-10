@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Model;
 
 namespace Servisi
 {
@@ -113,7 +114,7 @@ namespace Servisi
             throw new NotImplementedException();
         }
 
-        public bool registracijaLige()
+        public bool registracijaLige(string naziv, List<Tim> timovi, TipTakmicenja tip)
         {
             throw new NotImplementedException();
         }

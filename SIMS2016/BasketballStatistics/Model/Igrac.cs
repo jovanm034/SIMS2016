@@ -17,8 +17,7 @@ namespace Model
         private String visina;
         private String tezina;
         private Pozicija pozicija;
-        // svi timovi u kojima je igrac igrao, podeljeno po sezonama
-        private Dictionary<String, List<Tim>> timovi;
+        private Dictionary<String, Takmicenje> takmicenja;
 
         public Igrac()
         {
@@ -29,11 +28,11 @@ namespace Model
             this.visina = null;
             this.tezina = null;
             this.pozicija = new Pozicija();
-            this.timovi = new Dictionary<String, List<Tim>>();
+            this.takmicenja = new Dictionary<String, Takmicenje>();
         }
 
         public Igrac(int registarskiBroj, String ime, String prezime, DateTime datumRodjenja, String visina, String tezina, Pozicija pozicija,
-            Dictionary<String, List<Tim>> timovi)
+            Dictionary<String, Takmicenje> takmicenja)
         {
             this.registarskiBroj = registarskiBroj;
             this.ime = ime;
@@ -42,7 +41,7 @@ namespace Model
             this.visina = visina;
             this.tezina = tezina;
             this.pozicija = pozicija;
-            this.timovi = timovi;
+            this.takmicenja = takmicenja;
         }
 
         public int RegistarskiBroj { get { return this.registarskiBroj; } set { this.registarskiBroj = value; } }
@@ -52,7 +51,7 @@ namespace Model
         public String Visina { get { return this.visina; } set { this.visina = value; } }
         public String Tezina { get { return this.tezina; } set { this.tezina = value; } }
         public Pozicija Pozicija { get { return this.pozicija; } set { this.pozicija = value; } }
-        public Dictionary<String, List<Tim>> Timovi { get { return this.timovi; } set { this.timovi = value; } }
+        public Dictionary<String, Takmicenje> Takmicenja { get { return this.takmicenja; } set { this.takmicenja = value; } }
 
 
     }

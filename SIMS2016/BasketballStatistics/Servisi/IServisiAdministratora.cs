@@ -11,7 +11,7 @@ namespace Servisi
     {
         bool registracijaKluba();
         bool registracijaReprezentacije();
-        bool registracijaLige();
+        bool registracijaLige(String naziv, List<Tim> timovi, TipTakmicenja tip);
         bool registracijaKupa();
         bool registracijaIgraca();
         bool registracijaSudije();

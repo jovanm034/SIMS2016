@@ -12,21 +12,21 @@ namespace Model
     public class Takmicenje
     {
         private String naziv;
-        private Dictionary<String, List<Tim>> timovi;
-        private Dictionary<String, List<Utakmica>> utakmice;
+        private Dictionary<String, Tim> timovi;
+        private Dictionary<String, Utakmica> utakmice;
         private OrganizacijaTakmicenja organizacija;
         private TipTakmicenja tip;
 
         public Takmicenje()
         {
             this.naziv = null;
-            this.timovi = new Dictionary<String, List<Tim>>();
-            this.utakmice = new Dictionary<String, List<Utakmica>>();
+            this.timovi = new Dictionary<String, Tim>();
+            this.utakmice = new Dictionary<String, Utakmica>();
             this.organizacija = OrganizacijaTakmicenja.Liga;
             this.tip = TipTakmicenja.Nacionalno;
         }
 
-        public Takmicenje(String naziv, Dictionary<String, List<Tim>> timovi, Dictionary<String, List<Utakmica>> utakmice, OrganizacijaTakmicenja organizacija, TipTakmicenja tip)
+        public Takmicenje(String naziv, Dictionary<String, Tim> timovi, Dictionary<String, Utakmica> utakmice, OrganizacijaTakmicenja organizacija, TipTakmicenja tip)
         {
             this.naziv = naziv;
             this.timovi = timovi;
@@ -36,8 +36,8 @@ namespace Model
         }
 
         public String Naziv { get { return this.naziv; } set { this.naziv = value; } }
-        public Dictionary<String, List<Tim>> Timovi { get { return this.timovi; } set { this.timovi = value; } }
-        public Dictionary<String, List<Utakmica>> Utakmice { get { return this.utakmice; } set { this.utakmice = value; } }
+        public Dictionary<String, Tim> Timovi { get { return this.timovi; } set { this.timovi = value; } }
+        public Dictionary<String, Utakmica> Utakmice { get { return this.utakmice; } set { this.utakmice = value; } }
         public OrganizacijaTakmicenja Organizacija { get { return this.organizacija; } set { this.organizacija = value; } }
         public TipTakmicenja Tip { get { return this.tip; } set { this.tip = value; } }
     }
