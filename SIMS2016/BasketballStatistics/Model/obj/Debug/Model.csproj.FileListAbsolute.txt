@@ -3,3 +3,8 @@ D:\Projects\Visual Studio\PRO-Stats\BasketballStatistics\Model\bin\Debug\Model.p
 D:\Projects\Visual Studio\PRO-Stats\BasketballStatistics\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 D:\Projects\Visual Studio\PRO-Stats\BasketballStatistics\Model\obj\Debug\Model.dll
 D:\Projects\Visual Studio\PRO-Stats\BasketballStatistics\Model\obj\Debug\Model.pdb
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\Model\obj\Debug\Model.dll
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\Model\obj\Debug\Model.pdb
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\Model\bin\Debug\Model.dll
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\Model\bin\Debug\Model.pdb

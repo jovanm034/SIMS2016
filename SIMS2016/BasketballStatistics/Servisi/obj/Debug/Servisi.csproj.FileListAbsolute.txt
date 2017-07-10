@@ -5,3 +5,10 @@ D:\Projects\Visual Studio\PRO-Stats\BasketballStatistics\Servisi\bin\Debug\Model
 D:\Projects\Visual Studio\PRO-Stats\BasketballStatistics\Servisi\obj\Debug\Servisi.csprojResolveAssemblyReference.cache
 D:\Projects\Visual Studio\PRO-Stats\BasketballStatistics\Servisi\obj\Debug\Servisi.dll
 D:\Projects\Visual Studio\PRO-Stats\BasketballStatistics\Servisi\obj\Debug\Servisi.pdb
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\Servisi\obj\Debug\Servisi.csprojResolveAssemblyReference.cache
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\Servisi\obj\Debug\Servisi.dll
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\Servisi\obj\Debug\Servisi.pdb
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\Servisi\bin\Debug\Servisi.dll
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\Servisi\bin\Debug\Servisi.pdb
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\Servisi\bin\Debug\Model.dll
+D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\Servisi\bin\Debug\Model.pdb

@@ -114,9 +114,41 @@ namespace Servisi
             throw new NotImplementedException();
         }
 
-        public bool registracijaLige(string naziv, List<Tim> timovi, TipTakmicenja tip)
+        public bool registracijaLige(String naziv, List<Tim> timovi, TipTakmicenja tip)
         {
-            throw new NotImplementedException();
+            if (Aplikacija.Takmicenja.ContainsKey(naziv)) { return false; }
+            Dictionary<String, Tim> timovirecnik = new Dictionary<String, Tim>();
+            Dictionary<String, Utakmica> utakmice = new Dictionary<String, Utakmica>();
+            for (int i = 0; i < timovi.Count; i++)
+            {
+                timovirecnik.Add(timovi[i].Naziv, timovi[i]);
+                for (int j = 0; j < timovi.Count; j++)
+                {
+                    if (i != j)
+                    {
+                        Utakmica u = new Utakmica();
+                        u.DomaciTim = timovi[i];
+                        u.GostujuciTim = timovi[j];
+                        u.DomaciTrener = timovi[i].Trener;
+                        u.GostujuciTrener = timovi[j].Trener;
+                        u.Statistika = new StatistikaUtakmice();
+                        foreach (Igrac di in timovi[i].Igraci.Values)
+                        {
+                            u.DomaciIgraci.Add(di.RegistarskiBroj, di);
+                            u.Statistika.StatistikaDomacihIgraca.Add(di.RegistarskiBroj, new StatistikaIgraca());
+                        }
+                        foreach (Igrac gi in timovi[j].Igraci.Values)
+                        {
+                            u.GostujuciIgraci.Add(gi.RegistarskiBroj, gi);
+                            u.Statistika.StatistikaGostujucihIgraca.Add(gi.RegistarskiBroj, new StatistikaIgraca());
+                        }
+                        utakmice.Add(timovi[i].Naziv + " - " + timovi[j].Naziv, u);
+                    }
+                }
+            }
+            Takmicenje liga = new Takmicenje(naziv, timovirecnik, utakmice, OrganizacijaTakmicenja.Liga, tip);
+            Aplikacija.Takmicenja.Add(naziv, liga);
+            return true;
         }
 
         public bool registracijaReprezentacije()

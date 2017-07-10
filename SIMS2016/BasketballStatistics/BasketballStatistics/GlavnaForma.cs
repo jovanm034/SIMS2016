@@ -64,6 +64,8 @@ namespace BasketballStatistics
             //===
             Aplikacija.Timovi.Add("RADNICKI KG", new Klub("RADNICKI KG", "Kragujevac", "Srbija", 1900, new Dictionary<String, Igrac>(), new Trener(), new Dictionary<String, Takmicenje>()));
             Aplikacija.Timovi.Add("C. ZVEZDA", new Klub("C. ZVEZDA", "Beograd", "Srbija", 1900, new Dictionary<String, Igrac>(), new Trener(), new Dictionary<String, Takmicenje>()));
+            List<Tim> tt = new List<Tim>(); tt.Add(Aplikacija.Timovi["RADNICKI KG"]); tt.Add(Aplikacija.Timovi["C. ZVEZDA"]);
+            this.servisiAdministratora.registracijaLige("Liga Srbije 2017", tt, TipTakmicenja.Nacionalno);
             //----------------------------------------
             InitializeComponent();
         }
@@ -93,7 +95,9 @@ namespace BasketballStatistics
                 else if (Aplikacija.PrijavljeniKorisnik.GetType().Equals(typeof(Statisticar)))
                 {
                     this.Controls.Add(this.panel2);
-                    this.panel2.Controls.Add(this.panel4);
+                    if (Aplikacija.Takmicenja.Count == 0) { this.panel2.Controls.Add(this.panel4); }
+                    else { this.panel2.Controls.Add(this.panel5); }
+                    
                     //Prikazi panel za statisticara
                 }
                 else if (Aplikacija.PrijavljeniKorisnik.GetType().Equals(typeof(Klijent)))
@@ -111,6 +115,7 @@ namespace BasketballStatistics
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Aplikacija.PrijavljeniKorisnik = null;
             this.Controls.Remove(this.panel2);
             this.Controls.Add(this.panel1);
         }
