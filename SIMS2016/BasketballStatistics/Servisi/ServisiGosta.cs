@@ -17,6 +17,7 @@ namespace Servisi
                 if (kv.Value.KorisnickoIme == korisnickoIme && kv.Value.Lozinka == lozinka)
                 {
                     korisnik = kv.Value;
+                    return korisnik;
                 }
             }
             return korisnik;

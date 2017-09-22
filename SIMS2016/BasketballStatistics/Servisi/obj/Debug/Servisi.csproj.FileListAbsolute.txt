@@ -12,3 +12,11 @@ D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016
 D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\Servisi\bin\Debug\Servisi.pdb
 D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\Servisi\bin\Debug\Model.dll
 D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\Servisi\bin\Debug\Model.pdb
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\Servisi\obj\Debug\Servisi.csprojResolveAssemblyReference.cache
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\Servisi\obj\Debug\Servisi.csproj.CoreCompileInputs.cache
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\Servisi\obj\Debug\Servisi.dll
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\Servisi\obj\Debug\Servisi.pdb
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\Servisi\bin\Debug\Servisi.dll
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\Servisi\bin\Debug\Servisi.pdb
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\Servisi\bin\Debug\Model.dll
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\Servisi\bin\Debug\Model.pdb

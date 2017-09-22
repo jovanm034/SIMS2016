@@ -176,7 +176,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Location = new System.Drawing.Point(23, 24);
             this.panel2.Name = "panel2";
@@ -734,7 +733,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1122, 583);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Name = "GlavnaForma";
             this.Text = "Kosarkaska Statistika";
             this.panel1.ResumeLayout(false);

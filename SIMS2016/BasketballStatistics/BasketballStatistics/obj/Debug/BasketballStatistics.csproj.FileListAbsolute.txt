@@ -24,3 +24,17 @@ D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016
 D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.GlavnaForma.resources
 D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.Properties.Resources.resources
 D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.csproj.GenerateResource.Cache
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\BasketballStatistics.exe.config
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\BasketballStatistics.exe
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\BasketballStatistics.pdb
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\Model.dll
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\Servisi.dll
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\Model.pdb
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\Servisi.pdb
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.csprojResolveAssemblyReference.cache
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.GlavnaForma.resources
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.Properties.Resources.resources
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.csproj.GenerateResource.Cache
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.csproj.CoreCompileInputs.cache
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.exe
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.pdb

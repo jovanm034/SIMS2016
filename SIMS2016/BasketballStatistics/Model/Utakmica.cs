@@ -26,7 +26,7 @@ namespace Model
             this.gostujuciIgraci = new Dictionary<int, Igrac>();
             this.domaciTrener = null;
             this.gostujuciTrener = null;
-            this.statistika = null;
+            this.statistika = new StatistikaUtakmice();
         }
 
         public Utakmica(Tim domaciTim, Tim gostujuciTim, List<Sudija> sudije, Dictionary<int, Igrac> domaciIgraci, Dictionary<int, Igrac> domaciPetorka, Dictionary<int, Igrac> domaciKlupa, Dictionary<int, Igrac> gostujuciIgraci, Dictionary<int, Igrac> gostujuciPetorka, Dictionary<int, Igrac> gostujuciKlupa, Trener domaciTrener, Trener gostujuciTrener, StatistikaUtakmice statistika)

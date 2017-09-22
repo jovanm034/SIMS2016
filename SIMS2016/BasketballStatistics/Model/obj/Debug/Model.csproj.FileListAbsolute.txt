@@ -8,3 +8,8 @@ D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016
 D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\Model\obj\Debug\Model.pdb
 D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\Model\bin\Debug\Model.dll
 D:\Faks\Faks\04. semestar\Specifikacija i modelovanje softvera\Projekat\SIMS2016\BasketballStatistics\Model\bin\Debug\Model.pdb
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\Model\bin\Debug\Model.dll
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\Model\bin\Debug\Model.pdb
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\Model\obj\Debug\Model.dll
+D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\Model\obj\Debug\Model.pdb
