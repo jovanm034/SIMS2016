@@ -46,7 +46,9 @@
     <Compile Include="Klijent.cs" />
     <Compile Include="Klub.cs" />
     <Compile Include="Reprezentacija.cs" />
+    <Compile Include="StatistikaTima.cs" />
     <Compile Include="Sudija.cs" />
+    <Compile Include="SutNaKos.cs" />
     <Compile Include="Takmicenje.cs" />
     <Compile Include="Tim.cs" />
     <Compile Include="Korisnik.cs" />
