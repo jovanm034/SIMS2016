@@ -20,6 +20,7 @@ namespace Model
         private int tehnickaGreskaKlupa;
         private int brojTimeOuta;
         private int brojNapada;
+        private int brojPoena;
 
         public StatistikaTima()
         {
@@ -39,6 +40,7 @@ namespace Model
             this.tehnickaGreskaKlupa = 0;
             this.brojTimeOuta = 0;
             this.brojNapada = 0;
+            this.brojPoena = 0;
         }
 
         // TODO: konstruktor sa parametrima
@@ -52,8 +54,9 @@ namespace Model
         public int TehnickaGreskaKlupa { get { return this.tehnickaGreskaKlupa; } set { this.tehnickaGreskaKlupa = value; } }
         public int BrojTimeOuta { get { return this.brojTimeOuta; } set { this.brojTimeOuta = value; } }
         public int BrojNapada { get { return this.brojNapada; } set { this.brojNapada = value; } }
+        public int BrojPoena { get { return this.brojPoena; } set { this.brojPoena = value; } }
 
-        
+
     }
     
 }

@@ -89,14 +89,13 @@ namespace BasketballStatistics
                 {
                     this.Controls.Add(this.panel2);
                     this.panel2.Controls.Add(this.panel3);
-                    Console.WriteLine("ADMIN!");
                     //Prikazi panel za administratora
                 }
                 else if (Aplikacija.PrijavljeniKorisnik.GetType().Equals(typeof(Statisticar)))
                 {
                     this.Controls.Add(this.panel2);
                     if (Aplikacija.Takmicenja.Count == 0) { this.panel2.Controls.Add(this.panel4); }
-                    else { this.panel2.Controls.Add(this.panel5); }
+                    else { this.pripremiPanel5(); }
                     
                     //Prikazi panel za statisticara
                 }
@@ -105,6 +104,23 @@ namespace BasketballStatistics
                     //Prikazi panel za klijenta
                 }
             }
+        }
+    
+        private void pripremiPanel5()
+        {
+            this.panel2.Controls.Add(this.panel5);
+            foreach(KeyValuePair<String, Takmicenje> t in Aplikacija.Takmicenja)
+            {
+                this.comboBox1.Items.Add(t.Key);
+            }
+
+        }
+
+        private void pripremiPanel6(String takmicenje, String utakmica)
+        {
+            // label21 - naziv domaceg tima
+            // label22 - naziv gostujuceg tima
+
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -115,9 +131,69 @@ namespace BasketballStatistics
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.panel2.Controls.Remove(this.panel3);
+            this.panel2.Controls.Remove(this.panel4);
+            this.panel2.Controls.Remove(this.panel5);
             Aplikacija.PrijavljeniKorisnik = null;
             this.Controls.Remove(this.panel2);
             this.Controls.Add(this.panel1);
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Inicijalizacija utakmica pri odabiru lige
+            this.comboBox2.Items.Clear();
+            String selektovan = this.comboBox1.SelectedItem.ToString();
+            Takmicenje odabrano = Aplikacija.Takmicenja[selektovan];
+            foreach(KeyValuePair<String, Utakmica> u in odabrano.Utakmice)
+            {
+                this.comboBox2.Items.Add(u.Key);
+            }
+        }
+
+        private void button29_Click(object sender, EventArgs e)
+        {
+            // 
+           
+            if(this.comboBox2.SelectedItem != null)
+            {
+                // inicijalizacija panela za vodjenje statistike
+
+            }
+            else
+            {
+                // ispisi poruku o gresci
+            }
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button54_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button51_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

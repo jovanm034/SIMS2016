@@ -38,3 +38,21 @@ D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims
 D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.csproj.CoreCompileInputs.cache
 D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.exe
 D:\GDRIVE\Fakultet\IV semestar\Specifikacija i modeliranje softvera\ProjekatSims\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.pdb
+E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\BasketballStatistics.exe.config
+E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.exe
+E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.pdb
+E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\BasketballStatistics.exe
+E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\BasketballStatistics.pdb
+E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\Model.dll
+E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\Servisi.dll
+E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\Model.pdb
+E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\Servisi.pdb
+E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.csprojResolveAssemblyReference.cache
+E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.GlavnaForma.resources
+E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.Properties.Resources.resources
+E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.csproj.GenerateResource.Cache
+E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\Interop.WMPLib.dll
+E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\AxInterop.WMPLib.dll
+E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\Interop.WMPLib.dll
+E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\AxInterop.WMPLib.dll
+E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.csproj.ResolveComReference.cache
