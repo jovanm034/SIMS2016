@@ -14,5 +14,6 @@ namespace Model
         public static Dictionary<int, Igrac> Igraci { get; set; }
         public static List<Sudija> Sudije { get; set; }
         public static Korisnik PrijavljeniKorisnik { get; set; }
+        public static Utakmica utakmicaNaAnalizi { get; set; }
     }
 }

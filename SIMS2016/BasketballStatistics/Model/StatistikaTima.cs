@@ -11,7 +11,7 @@ namespace Model
     
     public class StatistikaTima
     {
-        private Dictionary<int, StatistikaIgraca> statistikeIgraca;
+        private Dictionary<String, StatistikaIgraca> statistikeIgraca;
         private int timskiSkokNapad;
         private int timskiSkokOdbrana;
         private int timskiOsvojenaLopta;
@@ -24,7 +24,7 @@ namespace Model
 
         public StatistikaTima()
         {
-            this.statistikeIgraca = new Dictionary<int, StatistikaIgraca>();
+            this.statistikeIgraca = new Dictionary<String, StatistikaIgraca>();
             this.timskiSkokNapad = 0;
             this.timskiSkokOdbrana = 0;
             this.timskiOsvojenaLopta = 0;
@@ -45,7 +45,7 @@ namespace Model
 
         // TODO: konstruktor sa parametrima
 
-        public Dictionary<int, StatistikaIgraca> StatistikeIgraca { get { return this.statistikeIgraca; } set { this.statistikeIgraca = value; } }
+        public Dictionary<String, StatistikaIgraca> StatistikeIgraca { get { return this.statistikeIgraca; } set { this.statistikeIgraca = value; } }
         public int TimskiSkokNapad { get { return this.timskiSkokNapad; } set { this.timskiSkokNapad = value; } }
         public int TimskiSkokOdbrana { get { return this.timskiSkokOdbrana; } set { this.timskiSkokOdbrana = value; } }
         public int TimskiOsvojenaLopta { get { return this.timskiOsvojenaLopta; } set { this.timskiOsvojenaLopta = value; } }

@@ -131,20 +131,20 @@ namespace Servisi
                         u.GostujuciTim = timovi[j];
                         u.DomaciTrener = timovi[i].Trener;
                         u.GostujuciTrener = timovi[j].Trener;
-                        foreach (Igrac di in timovi[i].Igraci.Values)
+                        foreach (KeyValuePair<String, Igrac> di in timovi[i].Igraci)
                         {
-                            u.DomaciIgraci.Add(di.RegistarskiBroj, di);
+                            u.DomaciIgraci.Add(di.Value.RegistarskiBroj, di.Value);
                             foreach (StatistikaTima st in u.Statistika.StatistikaDomacegTima.Values)
                             {
-                                st.StatistikeIgraca.Add(di.RegistarskiBroj, new StatistikaIgraca());
+                                st.StatistikeIgraca.Add(di.Key, new StatistikaIgraca());
                             }
                         }
-                        foreach (Igrac gi in timovi[j].Igraci.Values)
+                        foreach (KeyValuePair<String, Igrac> gi in timovi[j].Igraci)
                         {
-                            u.GostujuciIgraci.Add(gi.RegistarskiBroj, gi);
+                            u.GostujuciIgraci.Add(gi.Value.RegistarskiBroj, gi.Value);
                             foreach (StatistikaTima st in u.Statistika.StatistikaGostujucegTima.Values)
                             {
-                                st.StatistikeIgraca.Add(gi.RegistarskiBroj, new StatistikaIgraca());
+                                st.StatistikeIgraca.Add(gi.Key, new StatistikaIgraca());
                             }
                         }
                         utakmice.Add(timovi[i].Naziv + " - " + timovi[j].Naziv, u);

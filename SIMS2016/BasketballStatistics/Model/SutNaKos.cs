@@ -8,7 +8,7 @@ namespace Model
 {
     public enum PozicijaSuta { P12, P13, P22, P23, P32, P33, P42, P43, P52, P62, P63, SB }
 
-    class SutNaKos
+    public class SutNaKos
     {
         private bool pogodak;
         private PozicijaSuta pozicija;

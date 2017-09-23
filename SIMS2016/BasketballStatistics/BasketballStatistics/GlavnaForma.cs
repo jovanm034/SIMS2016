@@ -64,6 +64,12 @@ namespace BasketballStatistics
             //===
             Aplikacija.Timovi.Add("RADNICKI KG", new Klub("RADNICKI KG", "Kragujevac", "Srbija", 1900, new Dictionary<String, Igrac>(), new Trener(), new Dictionary<String, Takmicenje>()));
             Aplikacija.Timovi.Add("C. ZVEZDA", new Klub("C. ZVEZDA", "Beograd", "Srbija", 1900, new Dictionary<String, Igrac>(), new Trener(), new Dictionary<String, Takmicenje>()));
+            Aplikacija.Timovi["RADNICKI KG"].Igraci.Add("10", Aplikacija.Igraci[1]);
+            Aplikacija.Timovi["RADNICKI KG"].Igraci.Add("5", Aplikacija.Igraci[2]);
+            Aplikacija.Timovi["RADNICKI KG"].Igraci.Add("7", Aplikacija.Igraci[3]);
+            Aplikacija.Timovi["C. ZVEZDA"].Igraci.Add("10", Aplikacija.Igraci[4]);
+            Aplikacija.Timovi["C. ZVEZDA"].Igraci.Add("12", Aplikacija.Igraci[5]);
+            Aplikacija.Timovi["C. ZVEZDA"].Igraci.Add("4", Aplikacija.Igraci[6]);
             List<Tim> tt = new List<Tim>(); tt.Add(Aplikacija.Timovi["RADNICKI KG"]); tt.Add(Aplikacija.Timovi["C. ZVEZDA"]);
             this.servisiAdministratora.registracijaLige("Liga Srbije 2017", tt, TipTakmicenja.Nacionalno);
             //----------------------------------------
@@ -120,7 +126,54 @@ namespace BasketballStatistics
         {
             // label21 - naziv domaceg tima
             // label22 - naziv gostujuceg tima
+            this.panel2.Controls.Remove(this.panel5);
+            this.panel2.Controls.Add(this.panel6);
+            Aplikacija.utakmicaNaAnalizi = Aplikacija.Takmicenja[takmicenje].Utakmice[utakmica];
+            this.label21.Text = Aplikacija.utakmicaNaAnalizi.DomaciTim.Naziv;
+            this.label22.Text = Aplikacija.utakmicaNaAnalizi.GostujuciTim.Naziv;
+            foreach(KeyValuePair<String, Igrac> i in Aplikacija.utakmicaNaAnalizi.DomaciTim.Igraci)
+            {
+                this.comboBox3.Items.Add("#" + i.Key + " " + i.Value.Ime + " " + i.Value.Prezime);
+            }
+            this.comboBox3.SelectedIndex = 0;
+            foreach (KeyValuePair<String, Igrac> i in Aplikacija.utakmicaNaAnalizi.GostujuciTim.Igraci)
+            {
+                this.comboBox4.Items.Add("#" + i.Key + " " + i.Value.Ime + " " + i.Value.Prezime);
+            }
+            this.comboBox4.SelectedIndex = 0;
+            Aplikacija.utakmicaNaAnalizi.Statistika.Odradjena = true;
+        }
 
+        private Cetvrtina trenutnaCetvrtina()
+        {
+            Cetvrtina c = new Cetvrtina();
+            if (this.radioButton1.Checked == true) { c = Cetvrtina.Prva; }
+            else if (this.radioButton2.Checked == true) { c = Cetvrtina.Druga; }
+            else if(this.radioButton3.Checked == true) { c = Cetvrtina.Treca; }
+            else if(this.radioButton4.Checked == true) { c = Cetvrtina.Cetvrta; }
+            return c;
+        }
+
+        private String dresIgraca(String domaciGost)
+        {
+            if (domaciGost == "D")
+            {
+                String zapis = this.comboBox3.SelectedItem.ToString();
+                return zapis.Substring(1, zapis.IndexOf(' ', 0) - 1);
+            }
+            else if (domaciGost == "G")
+            {
+                String zapis = this.comboBox4.SelectedItem.ToString();
+                return zapis.Substring(1, zapis.IndexOf(' ', 0) - 1);
+            }
+            else return null;      
+        }
+
+        private void konzolniIzvestaj(String tekst)
+        {
+            this.textBox3.Text = tekst + System.Environment.NewLine + this.textBox3.Text;
+            //this.textBox3.AppendText(Environment.NewLine);
+            //this.textBox3.AppendText(tekst);
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -131,9 +184,13 @@ namespace BasketballStatistics
 
         private void button2_Click(object sender, EventArgs e)
         {
+            // odjava
             this.panel2.Controls.Remove(this.panel3);
             this.panel2.Controls.Remove(this.panel4);
             this.panel2.Controls.Remove(this.panel5);
+            this.panel2.Controls.Remove(this.panel6);
+            this.comboBox3.Items.Clear();
+            this.comboBox4.Items.Clear();
             Aplikacija.PrijavljeniKorisnik = null;
             this.Controls.Remove(this.panel2);
             this.Controls.Add(this.panel1);
@@ -158,7 +215,7 @@ namespace BasketballStatistics
             if(this.comboBox2.SelectedItem != null)
             {
                 // inicijalizacija panela za vodjenje statistike
-
+                this.pripremiPanel6(this.comboBox1.SelectedItem.ToString(), this.comboBox2.SelectedItem.ToString());
             }
             else
             {
@@ -168,12 +225,18 @@ namespace BasketballStatistics
 
         private void button30_Click(object sender, EventArgs e)
         {
-
+            // otvori snimak
+            if(openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                axWindowsMediaPlayer1.URL = openFileDialog1.FileName;
+            }
         }
 
         private void button31_Click(object sender, EventArgs e)
         {
-
+            // timski skok u napadu, domaci
+            this.servisiStatisticara.timskiSkokUNapadu(this.trenutnaCetvrtina(), "D");
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [D] Timski skok u napadu");
         }
 
         private void button54_Click(object sender, EventArgs e)
@@ -183,7 +246,7 @@ namespace BasketballStatistics
 
         private void button51_Click(object sender, EventArgs e)
         {
-
+            // izgubljena lopta, domacin
         }
 
         private void label19_Click(object sender, EventArgs e)
@@ -192,6 +255,227 @@ namespace BasketballStatistics
         }
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button32_Click(object sender, EventArgs e)
+        {
+            // timski skok u odbrani, domacin
+            this.servisiStatisticara.timskiSkokUOdbrani(this.trenutnaCetvrtina(), "D");
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [D] Timski skok u odbrani");
+
+        }
+
+        private void button33_Click(object sender, EventArgs e)
+        {
+            // timski osvojena lopta, domacin
+            this.servisiStatisticara.timskiOsvojenaLopta(this.trenutnaCetvrtina(), "D");
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [D] Timski osvojena lopta");
+        }
+
+        private void button34_Click(object sender, EventArgs e)
+        {
+            // timski izgubljena lopta, domacin
+
+        }
+
+        private void button35_Click(object sender, EventArgs e)
+        {
+            // tehnicka trenera, domacin
+            this.servisiStatisticara.tehnickaTrenera(this.trenutnaCetvrtina(), "D");
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [D] Tehnicka greska trenera");
+        }
+
+        private void button36_Click(object sender, EventArgs e)
+        {
+            // tehnicka klupe, domacin
+            this.servisiStatisticara.tehnickaKlupe(this.trenutnaCetvrtina(), "D");
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [D] Tehnicka greska sa klupe");
+        }
+
+        private void button38_Click(object sender, EventArgs e)
+        {
+            // napad, domacin
+            this.servisiStatisticara.timskiNapad(this.trenutnaCetvrtina(), "D");
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [D] Novi napad");
+        }
+
+        private void button37_Click(object sender, EventArgs e)
+        {
+            // time-out, domacin
+            this.servisiStatisticara.timeOut(this.trenutnaCetvrtina(), "D");
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [D] Time-out");
+        }
+
+        private void button39_Click(object sender, EventArgs e)
+        {
+            // time-out, gost
+            this.servisiStatisticara.timeOut(this.trenutnaCetvrtina(), "G");
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [G] Time-out");
+        }
+
+        private void button40_Click(object sender, EventArgs e)
+        {
+            // napad, gost
+            this.servisiStatisticara.timskiNapad(this.trenutnaCetvrtina(), "G");
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [G] Novi napad");
+        }
+
+        private void button41_Click(object sender, EventArgs e)
+        {
+            // tehnicka klupe, gost
+            this.servisiStatisticara.tehnickaKlupe(this.trenutnaCetvrtina(), "G");
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [G] Tehnicka greska sa klupe");
+        }
+
+        private void button42_Click(object sender, EventArgs e)
+        {
+            // tehnicka trenera, gost
+            this.servisiStatisticara.tehnickaTrenera(this.trenutnaCetvrtina(), "G");
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [G] Tehnicka greska trenera");
+        }
+
+        private void button43_Click(object sender, EventArgs e)
+        {
+            // izgubljena lopta, gost
+
+        }
+
+        private void button44_Click(object sender, EventArgs e)
+        {
+            // timski osvojena lopta, gost
+            this.servisiStatisticara.timskiOsvojenaLopta(this.trenutnaCetvrtina(), "G");
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [G] Timski osvojena lopta");
+        }
+
+        private void button45_Click(object sender, EventArgs e)
+        {
+            // timski skok u odbrani, gost
+            this.servisiStatisticara.timskiSkokUOdbrani(this.trenutnaCetvrtina(), "G");
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [G] Timski skok u odbrani");
+        }
+
+        private void button46_Click(object sender, EventArgs e)
+        {
+            // timski skok u napadu, gost
+            this.servisiStatisticara.timskiSkokUNapadu(this.trenutnaCetvrtina(), "G");
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [G] Timski skok u napadu");
+        }
+
+        private void button53_Click(object sender, EventArgs e)
+        {
+            // asistencija, domacin
+            this.servisiStatisticara.asistencija(this.trenutnaCetvrtina(),"D",  this.dresIgraca("D"));
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [D] [" + this.dresIgraca("D") + "] Asistencija");
+
+        }
+
+        private void button52_Click(object sender, EventArgs e)
+        {
+            // blokada, domacin
+            this.servisiStatisticara.blokada(this.trenutnaCetvrtina(), "D", this.dresIgraca("D"));
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [D] [" + this.dresIgraca("D") + "] Blokada");
+        }
+
+        private void button50_Click(object sender, EventArgs e)
+        {
+            // skok u napadu, domacin
+            this.servisiStatisticara.skokUNapadu(this.trenutnaCetvrtina(), "D", this.dresIgraca("D"));
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [D] [" + this.dresIgraca("D") + "] Skok u napadu");
+        }
+
+        private void button49_Click(object sender, EventArgs e)
+        {
+            // skok u odbrani, domacin
+            this.servisiStatisticara.skokUOdbrani(this.trenutnaCetvrtina(), "D", this.dresIgraca("D"));
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [D] [" + this.dresIgraca("D") + "] Skok u odbrani");
+        }
+
+        private void button48_Click(object sender, EventArgs e)
+        {
+            // licna greska, domacin
+           
+        }
+
+        private void button47_Click(object sender, EventArgs e)
+        {
+            // tehnicka greska, domacin
+            this.servisiStatisticara.tehnickaGreska(this.trenutnaCetvrtina(), "D", this.dresIgraca("D"));
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [D] [" + this.dresIgraca("D") + "] Tehnicka greska");
+        }
+
+        private void button64_Click(object sender, EventArgs e)
+        {
+            // nesportska greska, domacin
+        }
+
+        private void button62_Click(object sender, EventArgs e)
+        {
+            // asistencija, gost
+            this.servisiStatisticara.asistencija(this.trenutnaCetvrtina(), "G", this.dresIgraca("G"));
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [G] [" + this.dresIgraca("G") + "] Asistencija");
+        }
+
+        private void button63_Click(object sender, EventArgs e)
+        {
+            // sut na kos, gost
+        }
+
+        private void button61_Click(object sender, EventArgs e)
+        {
+            // blokada, gost
+            this.servisiStatisticara.blokada(this.trenutnaCetvrtina(), "G", this.dresIgraca("G"));
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [G] [" + this.dresIgraca("G") + "] Blokada");
+        }
+
+        private void button60_Click(object sender, EventArgs e)
+        {
+            // izgubljena lopta, gost
+        }
+
+        private void button59_Click(object sender, EventArgs e)
+        {
+            // skok u napadu, gost
+            this.servisiStatisticara.skokUNapadu(this.trenutnaCetvrtina(), "G", this.dresIgraca("G"));
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [G] [" + this.dresIgraca("G") + "] Skok u napadu");
+        }
+
+        private void button58_Click(object sender, EventArgs e)
+        {
+            // skok u odbrani, gost
+            this.servisiStatisticara.skokUOdbrani(this.trenutnaCetvrtina(), "G", this.dresIgraca("G"));
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [G] [" + this.dresIgraca("G") + "] Skok u odbrani");
+        }
+
+        private void button57_Click(object sender, EventArgs e)
+        {
+            // licna greska, gost
+        }
+
+        private void button56_Click(object sender, EventArgs e)
+        {
+            // tehnicka greska, gost
+            this.servisiStatisticara.tehnickaGreska(this.trenutnaCetvrtina(), "G", this.dresIgraca("G"));
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [G] [" + this.dresIgraca("G") + "] Tehnicka greska");
+        }
+
+        private void button55_Click(object sender, EventArgs e)
+        {
+            // nesportska, gost
+        }
+
+        private void button65_Click(object sender, EventArgs e)
+        {
+            // kraj utakmice
+            this.comboBox3.Items.Clear();
+            this.comboBox4.Items.Clear();
+            Aplikacija.utakmicaNaAnalizi = null;
+            this.panel2.Controls.Remove(this.panel6);
+            this.pripremiPanel5();
+        }
+
+        private void label23_Click(object sender, EventArgs e)
         {
 
         }

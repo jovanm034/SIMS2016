@@ -38,6 +38,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.button65 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.button55 = new System.Windows.Forms.Button();
             this.button56 = new System.Windows.Forms.Button();
             this.button57 = new System.Windows.Forms.Button();
@@ -131,18 +143,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button65 = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -231,7 +232,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Location = new System.Drawing.Point(23, 24);
             this.panel2.Name = "panel2";
@@ -299,6 +299,147 @@
             this.panel6.Size = new System.Drawing.Size(1050, 481);
             this.panel6.TabIndex = 1;
             // 
+            // button65
+            // 
+            this.button65.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button65.Location = new System.Drawing.Point(466, 340);
+            this.button65.Name = "button65";
+            this.button65.Size = new System.Drawing.Size(120, 25);
+            this.button65.TabIndex = 60;
+            this.button65.Text = "KRAJ UTAKMICE";
+            this.button65.UseVisualStyleBackColor = true;
+            this.button65.Click += new System.EventHandler(this.button65_Click);
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.Black;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.ForeColor = System.Drawing.Color.Red;
+            this.textBox3.Location = new System.Drawing.Point(349, 379);
+            this.textBox3.MaxLength = 9999999;
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox3.Size = new System.Drawing.Size(355, 78);
+            this.textBox3.TabIndex = 59;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.ForeColor = System.Drawing.Color.Red;
+            this.radioButton4.Location = new System.Drawing.Point(574, 288);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(36, 24);
+            this.radioButton4.TabIndex = 58;
+            this.radioButton4.Text = "4";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.ForeColor = System.Drawing.Color.Red;
+            this.radioButton3.Location = new System.Drawing.Point(532, 288);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(36, 24);
+            this.radioButton3.TabIndex = 57;
+            this.radioButton3.Text = "3";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.ForeColor = System.Drawing.Color.Red;
+            this.radioButton2.Location = new System.Drawing.Point(490, 288);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(36, 24);
+            this.radioButton2.TabIndex = 56;
+            this.radioButton2.Text = "2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.ForeColor = System.Drawing.Color.Red;
+            this.radioButton1.Location = new System.Drawing.Point(448, 288);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(36, 24);
+            this.radioButton1.TabIndex = 55;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.Black;
+            this.label24.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label24.Font = new System.Drawing.Font("Niagara Solid", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Red;
+            this.label24.Location = new System.Drawing.Point(610, 291);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(95, 74);
+            this.label24.TabIndex = 54;
+            this.label24.Text = "000";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.Black;
+            this.label23.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label23.Font = new System.Drawing.Font("Niagara Solid", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Red;
+            this.label23.Location = new System.Drawing.Point(348, 291);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(95, 74);
+            this.label23.TabIndex = 53;
+            this.label23.Text = "000";
+            this.label23.Click += new System.EventHandler(this.label23_Click);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Red;
+            this.label22.Location = new System.Drawing.Point(771, 10);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(0, 20);
+            this.label22.TabIndex = 52;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Red;
+            this.label21.Location = new System.Drawing.Point(28, 10);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(0, 20);
+            this.label21.TabIndex = 51;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Red;
+            this.label20.Location = new System.Drawing.Point(772, 62);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(31, 15);
+            this.label20.TabIndex = 50;
+            this.label20.Text = "Tim:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Red;
+            this.label19.Location = new System.Drawing.Point(29, 62);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(31, 15);
+            this.label19.TabIndex = 49;
+            this.label19.Text = "Tim:";
+            this.label19.Click += new System.EventHandler(this.label19_Click);
+            // 
             // button55
             // 
             this.button55.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -308,6 +449,7 @@
             this.button55.TabIndex = 48;
             this.button55.Text = "Nesportska";
             this.button55.UseVisualStyleBackColor = true;
+            this.button55.Click += new System.EventHandler(this.button55_Click);
             // 
             // button56
             // 
@@ -318,6 +460,7 @@
             this.button56.TabIndex = 47;
             this.button56.Text = "Tehnicka greska";
             this.button56.UseVisualStyleBackColor = true;
+            this.button56.Click += new System.EventHandler(this.button56_Click);
             // 
             // button57
             // 
@@ -328,6 +471,7 @@
             this.button57.TabIndex = 46;
             this.button57.Text = "Licna greska";
             this.button57.UseVisualStyleBackColor = true;
+            this.button57.Click += new System.EventHandler(this.button57_Click);
             // 
             // button58
             // 
@@ -338,6 +482,7 @@
             this.button58.TabIndex = 45;
             this.button58.Text = "Skok u odbrani";
             this.button58.UseVisualStyleBackColor = true;
+            this.button58.Click += new System.EventHandler(this.button58_Click);
             // 
             // button59
             // 
@@ -348,6 +493,7 @@
             this.button59.TabIndex = 44;
             this.button59.Text = "Skok u napadu";
             this.button59.UseVisualStyleBackColor = true;
+            this.button59.Click += new System.EventHandler(this.button59_Click);
             // 
             // button60
             // 
@@ -358,6 +504,7 @@
             this.button60.TabIndex = 43;
             this.button60.Text = "Izgubljena lopta";
             this.button60.UseVisualStyleBackColor = true;
+            this.button60.Click += new System.EventHandler(this.button60_Click);
             // 
             // button61
             // 
@@ -368,6 +515,7 @@
             this.button61.TabIndex = 42;
             this.button61.Text = "Blokada";
             this.button61.UseVisualStyleBackColor = true;
+            this.button61.Click += new System.EventHandler(this.button61_Click);
             // 
             // button62
             // 
@@ -378,6 +526,7 @@
             this.button62.TabIndex = 41;
             this.button62.Text = "Asistencija";
             this.button62.UseVisualStyleBackColor = true;
+            this.button62.Click += new System.EventHandler(this.button62_Click);
             // 
             // button63
             // 
@@ -388,6 +537,7 @@
             this.button63.TabIndex = 40;
             this.button63.Text = "Sut na kos";
             this.button63.UseVisualStyleBackColor = true;
+            this.button63.Click += new System.EventHandler(this.button63_Click);
             // 
             // button64
             // 
@@ -398,6 +548,7 @@
             this.button64.TabIndex = 39;
             this.button64.Text = "Nesportska";
             this.button64.UseVisualStyleBackColor = true;
+            this.button64.Click += new System.EventHandler(this.button64_Click);
             // 
             // button47
             // 
@@ -408,6 +559,7 @@
             this.button47.TabIndex = 29;
             this.button47.Text = "Tehnicka greska";
             this.button47.UseVisualStyleBackColor = true;
+            this.button47.Click += new System.EventHandler(this.button47_Click);
             // 
             // button48
             // 
@@ -418,6 +570,7 @@
             this.button48.TabIndex = 28;
             this.button48.Text = "Licna greska";
             this.button48.UseVisualStyleBackColor = true;
+            this.button48.Click += new System.EventHandler(this.button48_Click);
             // 
             // button49
             // 
@@ -428,6 +581,7 @@
             this.button49.TabIndex = 27;
             this.button49.Text = "Skok u odbrani";
             this.button49.UseVisualStyleBackColor = true;
+            this.button49.Click += new System.EventHandler(this.button49_Click);
             // 
             // button50
             // 
@@ -438,6 +592,7 @@
             this.button50.TabIndex = 26;
             this.button50.Text = "Skok u napadu";
             this.button50.UseVisualStyleBackColor = true;
+            this.button50.Click += new System.EventHandler(this.button50_Click);
             // 
             // button51
             // 
@@ -459,6 +614,7 @@
             this.button52.TabIndex = 24;
             this.button52.Text = "Blokada";
             this.button52.UseVisualStyleBackColor = true;
+            this.button52.Click += new System.EventHandler(this.button52_Click);
             // 
             // button53
             // 
@@ -469,6 +625,7 @@
             this.button53.TabIndex = 23;
             this.button53.Text = "Asistencija";
             this.button53.UseVisualStyleBackColor = true;
+            this.button53.Click += new System.EventHandler(this.button53_Click);
             // 
             // button54
             // 
@@ -528,6 +685,7 @@
             this.button39.TabIndex = 17;
             this.button39.Text = "Time out";
             this.button39.UseVisualStyleBackColor = true;
+            this.button39.Click += new System.EventHandler(this.button39_Click);
             // 
             // button40
             // 
@@ -538,6 +696,7 @@
             this.button40.TabIndex = 16;
             this.button40.Text = "Napad";
             this.button40.UseVisualStyleBackColor = true;
+            this.button40.Click += new System.EventHandler(this.button40_Click);
             // 
             // button41
             // 
@@ -548,6 +707,7 @@
             this.button41.TabIndex = 15;
             this.button41.Text = "Tehnicka klupe";
             this.button41.UseVisualStyleBackColor = true;
+            this.button41.Click += new System.EventHandler(this.button41_Click);
             // 
             // button42
             // 
@@ -558,6 +718,7 @@
             this.button42.TabIndex = 14;
             this.button42.Text = "Tehnicka trenera";
             this.button42.UseVisualStyleBackColor = true;
+            this.button42.Click += new System.EventHandler(this.button42_Click);
             // 
             // button43
             // 
@@ -568,6 +729,7 @@
             this.button43.TabIndex = 13;
             this.button43.Text = "Izgubljena lopta";
             this.button43.UseVisualStyleBackColor = true;
+            this.button43.Click += new System.EventHandler(this.button43_Click);
             // 
             // button44
             // 
@@ -578,6 +740,7 @@
             this.button44.TabIndex = 12;
             this.button44.Text = "Osvojena lopta";
             this.button44.UseVisualStyleBackColor = true;
+            this.button44.Click += new System.EventHandler(this.button44_Click);
             // 
             // button45
             // 
@@ -588,6 +751,7 @@
             this.button45.TabIndex = 11;
             this.button45.Text = "Skok u odbrani";
             this.button45.UseVisualStyleBackColor = true;
+            this.button45.Click += new System.EventHandler(this.button45_Click);
             // 
             // button46
             // 
@@ -598,6 +762,7 @@
             this.button46.TabIndex = 10;
             this.button46.Text = "Skok u napadu";
             this.button46.UseVisualStyleBackColor = true;
+            this.button46.Click += new System.EventHandler(this.button46_Click);
             // 
             // button37
             // 
@@ -608,6 +773,7 @@
             this.button37.TabIndex = 9;
             this.button37.Text = "Time out";
             this.button37.UseVisualStyleBackColor = true;
+            this.button37.Click += new System.EventHandler(this.button37_Click);
             // 
             // button38
             // 
@@ -618,6 +784,7 @@
             this.button38.TabIndex = 8;
             this.button38.Text = "Napad";
             this.button38.UseVisualStyleBackColor = true;
+            this.button38.Click += new System.EventHandler(this.button38_Click);
             // 
             // button36
             // 
@@ -628,6 +795,7 @@
             this.button36.TabIndex = 7;
             this.button36.Text = "Tehnicka klupe";
             this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
             // 
             // button35
             // 
@@ -638,6 +806,7 @@
             this.button35.TabIndex = 6;
             this.button35.Text = "Tehnicka trenera";
             this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.button35_Click);
             // 
             // button34
             // 
@@ -648,6 +817,7 @@
             this.button34.TabIndex = 5;
             this.button34.Text = "Izgubljena lopta";
             this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.button34_Click);
             // 
             // button33
             // 
@@ -658,6 +828,7 @@
             this.button33.TabIndex = 4;
             this.button33.Text = "Osvojena lopta";
             this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.button33_Click);
             // 
             // button32
             // 
@@ -668,6 +839,7 @@
             this.button32.TabIndex = 3;
             this.button32.Text = "Skok u odbrani";
             this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // button31
             // 
@@ -1248,146 +1420,10 @@
             this.label14.TabIndex = 0;
             this.label14.Text = "NEMA POSLA ZA STATISTICARE";
             // 
-            // label19
+            // openFileDialog1
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.Red;
-            this.label19.Location = new System.Drawing.Point(29, 62);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(31, 15);
-            this.label19.TabIndex = 49;
-            this.label19.Text = "Tim:";
-            this.label19.Click += new System.EventHandler(this.label19_Click);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Red;
-            this.label20.Location = new System.Drawing.Point(772, 62);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(31, 15);
-            this.label20.TabIndex = 50;
-            this.label20.Text = "Tim:";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.Red;
-            this.label21.Location = new System.Drawing.Point(28, 10);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(0, 20);
-            this.label21.TabIndex = 51;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.Red;
-            this.label22.Location = new System.Drawing.Point(771, 10);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(0, 20);
-            this.label22.TabIndex = 52;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.Black;
-            this.label23.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label23.Font = new System.Drawing.Font("Niagara Solid", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.Red;
-            this.label23.Location = new System.Drawing.Point(348, 291);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(95, 74);
-            this.label23.TabIndex = 53;
-            this.label23.Text = "000";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.Black;
-            this.label24.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label24.Font = new System.Drawing.Font("Niagara Solid", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.Red;
-            this.label24.Location = new System.Drawing.Point(610, 291);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(95, 74);
-            this.label24.TabIndex = 54;
-            this.label24.Text = "000";
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.ForeColor = System.Drawing.Color.Red;
-            this.radioButton1.Location = new System.Drawing.Point(448, 288);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(36, 24);
-            this.radioButton1.TabIndex = 55;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "1";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.ForeColor = System.Drawing.Color.Red;
-            this.radioButton2.Location = new System.Drawing.Point(490, 288);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(36, 24);
-            this.radioButton2.TabIndex = 56;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "2";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.ForeColor = System.Drawing.Color.Red;
-            this.radioButton3.Location = new System.Drawing.Point(532, 288);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(36, 24);
-            this.radioButton3.TabIndex = 57;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "3";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.ForeColor = System.Drawing.Color.Red;
-            this.radioButton4.Location = new System.Drawing.Point(574, 288);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(36, 24);
-            this.radioButton4.TabIndex = 58;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "4";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.Black;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.Red;
-            this.textBox3.Location = new System.Drawing.Point(349, 379);
-            this.textBox3.MaxLength = 9999999;
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox3.Size = new System.Drawing.Size(355, 78);
-            this.textBox3.TabIndex = 59;
-            // 
-            // button65
-            // 
-            this.button65.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button65.Location = new System.Drawing.Point(466, 340);
-            this.button65.Name = "button65";
-            this.button65.Size = new System.Drawing.Size(120, 25);
-            this.button65.TabIndex = 60;
-            this.button65.Text = "KRAJ UTAKMICE";
-            this.button65.UseVisualStyleBackColor = true;
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "Mp4 Files|*.mp4";
             // 
             // GlavnaForma
             // 
@@ -1395,7 +1431,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1122, 583);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Name = "GlavnaForma";
             this.Text = "Kosarkaska Statistika";
             this.panel1.ResumeLayout(false);
@@ -1537,6 +1573,7 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Button button65;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 

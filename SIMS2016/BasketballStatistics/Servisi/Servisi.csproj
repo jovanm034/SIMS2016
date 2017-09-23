@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="IServisiAdministratora.cs" />
     <Compile Include="IServisiGosta.cs" />
+    <Compile Include="IServisiStatisticara.cs" />
     <Compile Include="Servisi.cs" />
     <Compile Include="ServisiGosta.cs" />
     <Compile Include="ServisiAdministratora.cs" />
