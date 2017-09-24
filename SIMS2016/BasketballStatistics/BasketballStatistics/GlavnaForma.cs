@@ -176,6 +176,51 @@ namespace BasketballStatistics
             //this.textBox3.AppendText(tekst);
         }
 
+        private void ispisRezultat(String domacinGost, int brojPoena)
+        {
+            String brPoena = brojPoena.ToString();
+            String rezultat = "";
+            for(int i = 0; i < 3 - brPoena.Length;  i++)
+            {
+                rezultat += 0;
+            }
+            rezultat += brPoena;
+
+            if (domacinGost == "D")
+            {
+                this.label23.Text = rezultat;                
+            }else if(domacinGost == "G")
+            {
+                this.label24.Text = rezultat;
+            }
+        }
+
+        private void promenaRezultataPrikaz(String domacinGost)
+        {
+            if (domacinGost == "D")
+            {
+                int rezultat = 0;
+                foreach (StatistikaTima stat in Aplikacija.utakmicaNaAnalizi.Statistika.StatistikaDomacegTima.Values)
+                {
+
+                    rezultat += stat.BrojPoena;
+                }
+                this.ispisRezultat("D", rezultat);
+            }
+            else if(domacinGost == "G")
+            {
+                int rezultat = 0;
+                foreach (StatistikaTima stat in Aplikacija.utakmicaNaAnalizi.Statistika.StatistikaGostujucegTima.Values)
+                {
+
+                    rezultat += stat.BrojPoena;
+                }
+                this.ispisRezultat("G", rezultat);
+            }
+           
+
+        }
+
         private void label3_Click(object sender, EventArgs e)
         {
             this.Controls.Remove(this.panel1);
@@ -241,7 +286,13 @@ namespace BasketballStatistics
 
         private void button54_Click(object sender, EventArgs e)
         {
+            // sut na kos, domacin
+            SutNaKos sut = new SutNaKos();
+            DijalogSutNaKos dijalog = new DijalogSutNaKos(this.trenutnaCetvrtina(), "D", this.dresIgraca("D"), this.servisiStatisticara, sut);
+            dijalog.Show();
 
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [D] [" + this.dresIgraca("D") + "] Sut na kos");
+            dijalog.rezultatPromenjen += new pracenjeRezultata(promenaRezultataPrikaz);
         }
 
         private void button51_Click(object sender, EventArgs e)
@@ -403,7 +454,10 @@ namespace BasketballStatistics
         private void button48_Click(object sender, EventArgs e)
         {
             // licna greska, domacin
-           
+            DijalogLicnaGreska dijalog = new DijalogLicnaGreska(this.trenutnaCetvrtina(), "D", this.dresIgraca("D"), this.servisiStatisticara);
+            dijalog.Show();
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [D] [" + this.dresIgraca("D") + "] Licna greska");
+
         }
 
         private void button47_Click(object sender, EventArgs e)
@@ -431,6 +485,12 @@ namespace BasketballStatistics
         private void button63_Click(object sender, EventArgs e)
         {
             // sut na kos, gost
+            SutNaKos sut = new SutNaKos();
+            DijalogSutNaKos dijalog = new DijalogSutNaKos(this.trenutnaCetvrtina(), "G", this.dresIgraca("G"), this.servisiStatisticara, sut);
+            dijalog.Show();
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [G] [" + this.dresIgraca("G") + "] Sut na kos");
+            dijalog.rezultatPromenjen += new pracenjeRezultata(promenaRezultataPrikaz);
+
         }
 
         private void button61_Click(object sender, EventArgs e)
@@ -465,6 +525,9 @@ namespace BasketballStatistics
         private void button57_Click(object sender, EventArgs e)
         {
             // licna greska, gost
+            DijalogLicnaGreska dijalog = new DijalogLicnaGreska(this.trenutnaCetvrtina(), "G", this.dresIgraca("G"), this.servisiStatisticara);
+            dijalog.Show();
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [G] [" + this.dresIgraca("G") + "] Licna greska");
         }
 
         private void button56_Click(object sender, EventArgs e)

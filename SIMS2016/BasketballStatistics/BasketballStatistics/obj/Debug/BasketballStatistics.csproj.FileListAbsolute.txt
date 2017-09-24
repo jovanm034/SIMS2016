@@ -78,3 +78,5 @@ D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\B
 D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.DijalogTimskiIzgubljneLopte.resources
 D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.DijalogIgracIzgubljeneLopte.resources
 D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.DijalogZaNesportskuGresku.resources
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.DijalogLicnaGreska.resources
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.DijalogSutNaKos.resources

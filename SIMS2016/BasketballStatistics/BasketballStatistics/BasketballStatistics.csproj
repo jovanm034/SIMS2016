@@ -52,6 +52,18 @@
     <Compile Include="DijalogIgracIzgubljeneLopte.Designer.cs">
       <DependentUpon>DijalogIgracIzgubljeneLopte.cs</DependentUpon>
     </Compile>
+    <Compile Include="DijalogLicnaGreska.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DijalogLicnaGreska.Designer.cs">
+      <DependentUpon>DijalogLicnaGreska.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DijalogSutNaKos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DijalogSutNaKos.Designer.cs">
+      <DependentUpon>DijalogSutNaKos.cs</DependentUpon>
+    </Compile>
     <Compile Include="DijalogTimskiIzgubljneLopte.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +86,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DijalogIgracIzgubljeneLopte.resx">
       <DependentUpon>DijalogIgracIzgubljeneLopte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DijalogLicnaGreska.resx">
+      <DependentUpon>DijalogLicnaGreska.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DijalogSutNaKos.resx">
+      <DependentUpon>DijalogSutNaKos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DijalogTimskiIzgubljneLopte.resx">
       <DependentUpon>DijalogTimskiIzgubljneLopte.cs</DependentUpon>
