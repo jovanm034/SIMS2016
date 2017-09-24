@@ -18,3 +18,8 @@ E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\Model\bin\Debu
 E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\Model\obj\Debug\Model.dll
 E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\Model\obj\Debug\Model.pdb
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\Model\bin\Debug\Model.dll
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\Model\bin\Debug\Model.pdb
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\Model\obj\Debug\Model.dll
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\Model\obj\Debug\Model.pdb

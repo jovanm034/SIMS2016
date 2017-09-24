@@ -38,6 +38,7 @@ namespace Servisi
         {
             if (domacinGost == "D")
             {
+                int i = Aplikacija.utakmicaNaAnalizi.Statistika.StatistikaDomacegTima[cetvrtina].StatistikeIgraca[brojDresa].IzgubljenaLopta[tip];
                 Aplikacija.utakmicaNaAnalizi.Statistika.StatistikaDomacegTima[cetvrtina].StatistikeIgraca[brojDresa].IzgubljenaLopta[tip] += 1;
             }
             else if (domacinGost == "G")

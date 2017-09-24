@@ -56,3 +56,25 @@ E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\BasketballStat
 E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\Interop.WMPLib.dll
 E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\AxInterop.WMPLib.dll
 E:\Marko\FAX\workspaces\c#\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.csproj.ResolveComReference.cache
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\BasketballStatistics.exe.config
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\BasketballStatistics.exe
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\BasketballStatistics.pdb
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\Model.dll
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\Servisi.dll
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\Model.pdb
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\Servisi.pdb
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\Interop.WMPLib.dll
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\bin\Debug\AxInterop.WMPLib.dll
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.csprojResolveAssemblyReference.cache
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\Interop.WMPLib.dll
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\AxInterop.WMPLib.dll
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.csproj.ResolveComReference.cache
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.GlavnaForma.resources
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.Properties.Resources.resources
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.csproj.GenerateResource.Cache
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.csproj.CoreCompileInputs.cache
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.exe
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.pdb
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.DijalogTimskiIzgubljneLopte.resources
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.DijalogIgracIzgubljeneLopte.resources
+D:\Projekti\IV Semestar\Specifikacija i modeliranje softvera\SIMS2016\SIMS2016\BasketballStatistics\BasketballStatistics\obj\Debug\BasketballStatistics.DijalogZaNesportskuGresku.resources

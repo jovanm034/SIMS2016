@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public enum TipTimskeIzgubljeneLopte { TriSekudneReket,
+    public enum TipTimskeIzgubljeneLopte { TriSekundeReket,
         PetSekundiAut, PetSekundiMesto, OsamSekundiPrevodjenje, DvadesetCetiriSekundeNapad }
     
     public class StatistikaTima
@@ -30,7 +30,7 @@ namespace Model
             this.timskiOsvojenaLopta = 0;
 
             this.timskiIzgubljenaLopta = new Dictionary<TipTimskeIzgubljeneLopte, int>();
-            this.timskiIzgubljenaLopta.Add(TipTimskeIzgubljeneLopte.TriSekudneReket, 0);
+            this.timskiIzgubljenaLopta.Add(TipTimskeIzgubljeneLopte.TriSekundeReket, 0);
             this.timskiIzgubljenaLopta.Add(TipTimskeIzgubljeneLopte.PetSekundiAut, 0);
             this.timskiIzgubljenaLopta.Add(TipTimskeIzgubljeneLopte.PetSekundiMesto, 0);
             this.timskiIzgubljenaLopta.Add(TipTimskeIzgubljeneLopte.OsamSekundiPrevodjenje, 0);

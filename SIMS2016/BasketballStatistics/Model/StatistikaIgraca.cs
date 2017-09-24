@@ -59,9 +59,9 @@ namespace Model
         public int SkokOdbrana { get; set; }
         public int SkokNapad { get; set; }
         public int Asistencija { get; set; }
-        public Dictionary<TipIzgubljeneLopte, int> IzgubljenaLopta { get; set; }
-        public Dictionary<TipLicneGreske, int> LicnaGreska { get; set; }
-        public Dictionary<TipNesportskeGreske, int> NesportskaGreska { get; set; }
+        public Dictionary<TipIzgubljeneLopte, int> IzgubljenaLopta { get { return this.izgubljenaLopta; } set { this.izgubljenaLopta = value; } }
+        public Dictionary<TipLicneGreske, int> LicnaGreska { get { return this.licnaGreska; } set { this.licnaGreska = value; } }
+        public Dictionary<TipNesportskeGreske, int> NesportskaGreska { get { return this.nesportskaGreska; } set { this.nesportskaGreska = value; } }
         public int TehnickaGreska { get; set; }
         public int Blokada { get; set; }
     }

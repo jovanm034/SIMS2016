@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DijalogIgracIzgubljeneLopte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DijalogIgracIzgubljeneLopte.Designer.cs">
+      <DependentUpon>DijalogIgracIzgubljeneLopte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DijalogTimskiIzgubljneLopte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DijalogTimskiIzgubljneLopte.Designer.cs">
+      <DependentUpon>DijalogTimskiIzgubljneLopte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DijalogZaNesportskuGresku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DijalogZaNesportskuGresku.Designer.cs">
+      <DependentUpon>DijalogZaNesportskuGresku.cs</DependentUpon>
+    </Compile>
     <Compile Include="GlavnaForma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +72,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DijalogIgracIzgubljeneLopte.resx">
+      <DependentUpon>DijalogIgracIzgubljeneLopte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DijalogTimskiIzgubljneLopte.resx">
+      <DependentUpon>DijalogTimskiIzgubljneLopte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DijalogZaNesportskuGresku.resx">
+      <DependentUpon>DijalogZaNesportskuGresku.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GlavnaForma.resx">
       <DependentUpon>GlavnaForma.cs</DependentUpon>
     </EmbeddedResource>

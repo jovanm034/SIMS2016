@@ -32,7 +32,7 @@ namespace BasketballStatistics
             Aplikacija.PrijavljeniKorisnik = null;
             //OBRISI OVO KAD URADIS CUVANJE KORISNIKA!
             Aplikacija.Korisnici.Add("admin", new Administrator());
-            Aplikacija.Korisnici.Add("statisticar", new Statisticar("statisticar", "pass1", "pera", "peric", 0));
+            Aplikacija.Korisnici.Add("statisticar", new Statisticar("s", "s", "pera", "peric", 0));
             Aplikacija.Korisnici.Add("klijent1", new Klijent("klijent1", "pass1", "zika", "zikic", false));
             Aplikacija.Korisnici.Add("klijent2", new Klijent("klijent2", "pass1", "zika", "zikic", true));
             //----------------------------------------
@@ -247,6 +247,9 @@ namespace BasketballStatistics
         private void button51_Click(object sender, EventArgs e)
         {
             // izgubljena lopta, domacin
+            DijalogIgracIzgubljeneLopte dijalog = new DijalogIgracIzgubljeneLopte(this.trenutnaCetvrtina(), "D", this.dresIgraca("D"), this.servisiStatisticara);
+            dijalog.Show();
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [D] [" + this.dresIgraca("D") + "] Izgubljena lopta");
         }
 
         private void label19_Click(object sender, EventArgs e)
@@ -277,6 +280,9 @@ namespace BasketballStatistics
         private void button34_Click(object sender, EventArgs e)
         {
             // timski izgubljena lopta, domacin
+            DijalogTimskiIzgubljneLopte dijalog = new DijalogTimskiIzgubljneLopte(this.trenutnaCetvrtina(), "D", this.servisiStatisticara);
+            dijalog.Show();
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [D] Timski izgubljena lopta");
 
         }
 
@@ -338,8 +344,10 @@ namespace BasketballStatistics
 
         private void button43_Click(object sender, EventArgs e)
         {
-            // izgubljena lopta, gost
-
+            // timski izgubljena lopta, gost
+            DijalogTimskiIzgubljneLopte dijalog = new DijalogTimskiIzgubljneLopte(this.trenutnaCetvrtina(), "G", this.servisiStatisticara);
+            dijalog.Show();
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [G] Timski izgubljena lopta");
         }
 
         private void button44_Click(object sender, EventArgs e)
@@ -408,6 +416,9 @@ namespace BasketballStatistics
         private void button64_Click(object sender, EventArgs e)
         {
             // nesportska greska, domacin
+            DijalogZaNesportskuGresku dijalog = new DijalogZaNesportskuGresku(this.trenutnaCetvrtina(), "D", this.dresIgraca("D"), this.servisiStatisticara);
+            dijalog.Show();
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [D] [" + this.dresIgraca("D") + "] Nesportska greska");
         }
 
         private void button62_Click(object sender, EventArgs e)
@@ -431,7 +442,10 @@ namespace BasketballStatistics
 
         private void button60_Click(object sender, EventArgs e)
         {
-            // izgubljena lopta, gost
+            // igrac izgubljena lopta, gost
+            DijalogIgracIzgubljeneLopte dijalog = new DijalogIgracIzgubljeneLopte(this.trenutnaCetvrtina(), "G", this.dresIgraca("G"), this.servisiStatisticara);
+            dijalog.Show();
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [G] [" + this.dresIgraca("G") + "] Izgubljena lopta");
         }
 
         private void button59_Click(object sender, EventArgs e)
@@ -463,6 +477,9 @@ namespace BasketballStatistics
         private void button55_Click(object sender, EventArgs e)
         {
             // nesportska, gost
+            DijalogZaNesportskuGresku dijalog = new DijalogZaNesportskuGresku(this.trenutnaCetvrtina(), "G", this.dresIgraca("G"), this.servisiStatisticara);
+            dijalog.Show();
+            this.konzolniIzvestaj("[" + (Int32.Parse(this.trenutnaCetvrtina().GetHashCode().ToString()) + 1) + "] [G] [" + this.dresIgraca("G") + "] Nesportska greska");
         }
 
         private void button65_Click(object sender, EventArgs e)
