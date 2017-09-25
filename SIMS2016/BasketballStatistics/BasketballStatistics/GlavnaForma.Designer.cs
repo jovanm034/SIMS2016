@@ -37,6 +37,53 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioButton11 = new System.Windows.Forms.RadioButton();
+            this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton9 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.button66 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.button65 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -90,13 +137,6 @@
             this.button31 = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.button29 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -146,9 +186,14 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
-            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -237,6 +282,478 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1075, 536);
             this.panel2.TabIndex = 2;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel7.Controls.Add(this.groupBox3);
+            this.panel7.Controls.Add(this.dataGridView1);
+            this.panel7.Controls.Add(this.groupBox2);
+            this.panel7.Controls.Add(this.groupBox1);
+            this.panel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel7.Location = new System.Drawing.Point(12, 43);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1050, 481);
+            this.panel7.TabIndex = 1;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label37);
+            this.groupBox3.Controls.Add(this.label38);
+            this.groupBox3.Controls.Add(this.label39);
+            this.groupBox3.Controls.Add(this.label40);
+            this.groupBox3.Controls.Add(this.label33);
+            this.groupBox3.Controls.Add(this.label34);
+            this.groupBox3.Controls.Add(this.label35);
+            this.groupBox3.Controls.Add(this.label36);
+            this.groupBox3.Controls.Add(this.label32);
+            this.groupBox3.Controls.Add(this.label31);
+            this.groupBox3.Controls.Add(this.label30);
+            this.groupBox3.Controls.Add(this.label29);
+            this.groupBox3.Controls.Add(this.label28);
+            this.groupBox3.Controls.Add(this.label27);
+            this.groupBox3.Controls.Add(this.label26);
+            this.groupBox3.Controls.Add(this.label25);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.groupBox3.ForeColor = System.Drawing.Color.Red;
+            this.groupBox3.Location = new System.Drawing.Point(278, 17);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(372, 103);
+            this.groupBox3.TabIndex = 3;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Timska statistika:";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(319, 73);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(0, 17);
+            this.label37.TabIndex = 15;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(319, 56);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(0, 17);
+            this.label38.TabIndex = 14;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(319, 36);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(0, 17);
+            this.label39.TabIndex = 13;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(319, 18);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(0, 17);
+            this.label40.TabIndex = 12;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(125, 74);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(0, 17);
+            this.label33.TabIndex = 11;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(125, 57);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(0, 17);
+            this.label34.TabIndex = 10;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(125, 37);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(0, 17);
+            this.label35.TabIndex = 9;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(125, 19);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(0, 17);
+            this.label36.TabIndex = 8;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(191, 74);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(93, 17);
+            this.label32.TabIndex = 7;
+            this.label32.Text = "Broj napada: ";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(191, 57);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(104, 17);
+            this.label31.TabIndex = 6;
+            this.label31.Text = "Tehnicka klupe";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(191, 37);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(124, 17);
+            this.label30.TabIndex = 5;
+            this.label30.Text = "Tehnicka trenera: ";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(191, 19);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(67, 17);
+            this.label29.TabIndex = 4;
+            this.label29.Text = "Timeout: ";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(8, 77);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(119, 17);
+            this.label28.TabIndex = 3;
+            this.label28.Text = "Izgubljene lopte:  ";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(8, 57);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(111, 17);
+            this.label27.TabIndex = 2;
+            this.label27.Text = "Osvojene lopte: ";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(7, 37);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(111, 17);
+            this.label26.TabIndex = 1;
+            this.label26.Text = "Skok u odbrani: ";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(7, 19);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(111, 17);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "Skok u napadu: ";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9,
+            this.Column10,
+            this.Column11});
+            this.dataGridView1.Location = new System.Drawing.Point(27, 146);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowTemplate.Height = 18;
+            this.dataGridView1.Size = new System.Drawing.Size(979, 325);
+            this.dataGridView1.TabIndex = 2;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Igrac";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 70;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "2 poena";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 92;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "3 poena";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 92;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "S.bacanja";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 105;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "O.skok";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 83;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "N.skok";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 82;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Asist.";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Width = 73;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "L.greske";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Width = 95;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "N.greske";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Width = 97;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "T.greske";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            this.Column10.Width = 95;
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "Blokade";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            this.Column11.Width = 92;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.radioButton11);
+            this.groupBox2.Controls.Add(this.radioButton10);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.Red;
+            this.groupBox2.Location = new System.Drawing.Point(153, 17);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(121, 103);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Tim: ";
+            // 
+            // radioButton11
+            // 
+            this.radioButton11.AutoSize = true;
+            this.radioButton11.Location = new System.Drawing.Point(7, 44);
+            this.radioButton11.Name = "radioButton11";
+            this.radioButton11.Size = new System.Drawing.Size(56, 21);
+            this.radioButton11.TabIndex = 1;
+            this.radioButton11.Text = "Gost";
+            this.radioButton11.UseVisualStyleBackColor = true;
+            this.radioButton11.CheckedChanged += new System.EventHandler(this.radioButton11_CheckedChanged);
+            // 
+            // radioButton10
+            // 
+            this.radioButton10.AutoSize = true;
+            this.radioButton10.Checked = true;
+            this.radioButton10.Location = new System.Drawing.Point(7, 23);
+            this.radioButton10.Name = "radioButton10";
+            this.radioButton10.Size = new System.Drawing.Size(81, 21);
+            this.radioButton10.TabIndex = 0;
+            this.radioButton10.TabStop = true;
+            this.radioButton10.Text = "Domacin";
+            this.radioButton10.UseVisualStyleBackColor = true;
+            this.radioButton10.CheckedChanged += new System.EventHandler(this.radioButton10_CheckedChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.radioButton9);
+            this.groupBox1.Controls.Add(this.radioButton8);
+            this.groupBox1.Controls.Add(this.radioButton7);
+            this.groupBox1.Controls.Add(this.radioButton6);
+            this.groupBox1.Controls.Add(this.radioButton5);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.Red;
+            this.groupBox1.Location = new System.Drawing.Point(28, 17);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(121, 103);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Period igre: ";
+            // 
+            // radioButton9
+            // 
+            this.radioButton9.AutoSize = true;
+            this.radioButton9.Location = new System.Drawing.Point(51, 72);
+            this.radioButton9.Name = "radioButton9";
+            this.radioButton9.Size = new System.Drawing.Size(46, 21);
+            this.radioButton9.TabIndex = 4;
+            this.radioButton9.Text = "4/4";
+            this.radioButton9.UseVisualStyleBackColor = true;
+            this.radioButton9.CheckedChanged += new System.EventHandler(this.radioButton9_CheckedChanged);
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Location = new System.Drawing.Point(7, 72);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(46, 21);
+            this.radioButton8.TabIndex = 3;
+            this.radioButton8.Text = "3/4";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            this.radioButton8.CheckedChanged += new System.EventHandler(this.radioButton8_CheckedChanged);
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(51, 49);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(46, 21);
+            this.radioButton7.TabIndex = 2;
+            this.radioButton7.Text = "2/4";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(7, 49);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(46, 21);
+            this.radioButton6.TabIndex = 1;
+            this.radioButton6.Text = "1/4";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Checked = true;
+            this.radioButton5.Location = new System.Drawing.Point(7, 26);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(114, 21);
+            this.radioButton5.TabIndex = 0;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Cela utakmica";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(966, 9);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 29);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Odjavi se";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel5.Controls.Add(this.button66);
+            this.panel5.Controls.Add(this.button29);
+            this.panel5.Controls.Add(this.comboBox2);
+            this.panel5.Controls.Add(this.comboBox1);
+            this.panel5.Controls.Add(this.label16);
+            this.panel5.Controls.Add(this.label15);
+            this.panel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel5.Location = new System.Drawing.Point(12, 43);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1050, 481);
+            this.panel5.TabIndex = 2;
+            // 
+            // button66
+            // 
+            this.button66.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button66.Location = new System.Drawing.Point(333, 289);
+            this.button66.Name = "button66";
+            this.button66.Size = new System.Drawing.Size(96, 29);
+            this.button66.TabIndex = 5;
+            this.button66.Text = "Statistika";
+            this.button66.UseVisualStyleBackColor = true;
+            this.button66.Visible = false;
+            this.button66.Click += new System.EventHandler(this.button66_Click);
+            // 
+            // button29
+            // 
+            this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button29.Location = new System.Drawing.Point(632, 289);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(96, 29);
+            this.button29.TabIndex = 4;
+            this.button29.Text = "Analiziraj";
+            this.button29.UseVisualStyleBackColor = true;
+            this.button29.Visible = false;
+            this.button29.Click += new System.EventHandler(this.button29_Click);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(333, 239);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(395, 21);
+            this.comboBox2.TabIndex = 3;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(333, 170);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(395, 21);
+            this.comboBox1.TabIndex = 2;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(329, 212);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(129, 20);
+            this.label16.TabIndex = 1;
+            this.label16.Text = "Izaberi utakmicu:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(329, 143);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(141, 20);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Izaberi takmicenje:";
             // 
             // panel6
             // 
@@ -665,7 +1182,7 @@
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(775, 256);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(247, 28);
+            this.comboBox4.Size = new System.Drawing.Size(247, 21);
             this.comboBox4.TabIndex = 19;
             // 
             // comboBox3
@@ -673,7 +1190,7 @@
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(31, 256);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(246, 28);
+            this.comboBox3.Size = new System.Drawing.Size(246, 21);
             this.comboBox3.TabIndex = 18;
             // 
             // button39
@@ -870,78 +1387,6 @@
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(356, 215);
             this.axWindowsMediaPlayer1.TabIndex = 0;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(966, 9);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 29);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Odjavi se";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel5.Controls.Add(this.button29);
-            this.panel5.Controls.Add(this.comboBox2);
-            this.panel5.Controls.Add(this.comboBox1);
-            this.panel5.Controls.Add(this.label16);
-            this.panel5.Controls.Add(this.label15);
-            this.panel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel5.Location = new System.Drawing.Point(12, 43);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1050, 481);
-            this.panel5.TabIndex = 2;
-            // 
-            // button29
-            // 
-            this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button29.Location = new System.Drawing.Point(632, 289);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(96, 29);
-            this.button29.TabIndex = 4;
-            this.button29.Text = "Analiziraj";
-            this.button29.UseVisualStyleBackColor = true;
-            this.button29.Click += new System.EventHandler(this.button29_Click);
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(333, 239);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(395, 28);
-            this.comboBox2.TabIndex = 3;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(333, 170);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(395, 28);
-            this.comboBox1.TabIndex = 2;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(329, 212);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(129, 20);
-            this.label16.TabIndex = 1;
-            this.label16.Text = "Izaberi utakmicu:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(329, 143);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(141, 20);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "Izaberi takmicenje:";
             // 
             // panel4
             // 
@@ -1437,11 +1882,19 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -1574,6 +2027,46 @@
         private System.Windows.Forms.Button button65;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button button66;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton radioButton11;
+        private System.Windows.Forms.RadioButton radioButton10;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton radioButton9;
+        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
     }
 }
 

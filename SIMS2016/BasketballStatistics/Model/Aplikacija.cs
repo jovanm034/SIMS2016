@@ -15,5 +15,7 @@ namespace Model
         public static List<Sudija> Sudije { get; set; }
         public static Korisnik PrijavljeniKorisnik { get; set; }
         public static Utakmica utakmicaNaAnalizi { get; set; }
+        public static String takmicenjeNaPregledu { get; set; }
+        public static String utakmicaNaPregledu { get; set; }
     }
 }

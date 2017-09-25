@@ -33,8 +33,8 @@ namespace BasketballStatistics
             //OBRISI OVO KAD URADIS CUVANJE KORISNIKA!
             Aplikacija.Korisnici.Add("admin", new Administrator());
             Aplikacija.Korisnici.Add("statisticar", new Statisticar("s", "s", "pera", "peric", 0));
-            Aplikacija.Korisnici.Add("klijent1", new Klijent("klijent1", "pass1", "zika", "zikic", false));
-            Aplikacija.Korisnici.Add("klijent2", new Klijent("klijent2", "pass1", "zika", "zikic", true));
+            Aplikacija.Korisnici.Add("klijent1", new Klijent("k1", "k1", "zika", "zikic", false));
+            Aplikacija.Korisnici.Add("klijent2", new Klijent("k2", "k2", "zika", "zikic", true));
             //----------------------------------------
             //OBRISI OVO KAD URADIS DODAVANJE I CUVANJE
             Aplikacija.Igraci.Add(1, new Igrac(1, "ime1", "prezime", new DateTime(), "180cm", "90kg", Pozicija.C, new Dictionary<String, Takmicenje>()));
@@ -100,22 +100,35 @@ namespace BasketballStatistics
                 else if (Aplikacija.PrijavljeniKorisnik.GetType().Equals(typeof(Statisticar)))
                 {
                     this.Controls.Add(this.panel2);
-                    if (Aplikacija.Takmicenja.Count == 0) { this.panel2.Controls.Add(this.panel4); }
-                    else { this.pripremiPanel5(); }
-                    
+                    if (Aplikacija.Takmicenja.Count == 0)
+                    {
+                        this.panel2.Controls.Add(this.panel4);
+                        this.label11.Text = "NEMA POSLA ZA STATISTICARE";
+                        this.label12.Text = "NI JEDNO TAKMICENJE NIJE REGISTROVANO";
+                    }
+                    else { this.pripremiPanel5(); this.button29.Visible = true; }
+
                     //Prikazi panel za statisticara
                 }
                 else if (Aplikacija.PrijavljeniKorisnik.GetType().Equals(typeof(Klijent)))
                 {
                     //Prikazi panel za klijenta
+                    this.Controls.Add(this.panel2);
+                    if (Aplikacija.Takmicenja.Count == 0)
+                    {
+                        this.panel2.Controls.Add(this.panel4);
+                        this.label11.Text = "NEMA REGISTORVANIH TAKMICENJA";
+                        this.label12.Text = " ";
+                    }
+                    else { this.pripremiPanel5(); this.button66.Visible = true; }
                 }
             }
         }
-    
+
         private void pripremiPanel5()
         {
             this.panel2.Controls.Add(this.panel5);
-            foreach(KeyValuePair<String, Takmicenje> t in Aplikacija.Takmicenja)
+            foreach (KeyValuePair<String, Takmicenje> t in Aplikacija.Takmicenja)
             {
                 this.comboBox1.Items.Add(t.Key);
             }
@@ -131,7 +144,7 @@ namespace BasketballStatistics
             Aplikacija.utakmicaNaAnalizi = Aplikacija.Takmicenja[takmicenje].Utakmice[utakmica];
             this.label21.Text = Aplikacija.utakmicaNaAnalizi.DomaciTim.Naziv;
             this.label22.Text = Aplikacija.utakmicaNaAnalizi.GostujuciTim.Naziv;
-            foreach(KeyValuePair<String, Igrac> i in Aplikacija.utakmicaNaAnalizi.DomaciTim.Igraci)
+            foreach (KeyValuePair<String, Igrac> i in Aplikacija.utakmicaNaAnalizi.DomaciTim.Igraci)
             {
                 this.comboBox3.Items.Add("#" + i.Key + " " + i.Value.Ime + " " + i.Value.Prezime);
             }
@@ -143,6 +156,232 @@ namespace BasketballStatistics
             this.comboBox4.SelectedIndex = 0;
             Aplikacija.utakmicaNaAnalizi.Statistika.Odradjena = true;
         }
+
+        private void pripremiPanel7(String takmicenje, String utakmica)
+        {
+            Aplikacija.takmicenjeNaPregledu = takmicenje;
+            Aplikacija.utakmicaNaPregledu = utakmica;
+            this.panel2.Controls.Remove(this.panel5);
+            this.panel2.Controls.Add(this.panel7);
+            StatistikaUtakmice statistika = Aplikacija.Takmicenja[takmicenje].Utakmice[utakmica].Statistika;
+            int periodIgre = this.periodIgre();
+            int domacinGost = this.domacinGost();
+
+            if (periodIgre == 2 && domacinGost == 1) { popuniIzvestaj(statistika.StatistikaDomacegTima[Cetvrtina.Prva]); }
+            else if (periodIgre == 2 && domacinGost == 2) { popuniIzvestaj(statistika.StatistikaGostujucegTima[Cetvrtina.Prva]); }
+            else if (periodIgre == 3 && domacinGost == 1) { popuniIzvestaj(statistika.StatistikaDomacegTima[Cetvrtina.Druga]); }
+            else if (periodIgre == 3 && domacinGost == 2) { popuniIzvestaj(statistika.StatistikaGostujucegTima[Cetvrtina.Druga]); }
+            else if (periodIgre == 4 && domacinGost == 1) { popuniIzvestaj(statistika.StatistikaDomacegTima[Cetvrtina.Treca]); }
+            else if (periodIgre == 4 && domacinGost == 2) { popuniIzvestaj(statistika.StatistikaGostujucegTima[Cetvrtina.Treca]); }
+            else if (periodIgre == 5 && domacinGost == 1) { popuniIzvestaj(statistika.StatistikaDomacegTima[Cetvrtina.Cetvrta]); }
+            else if (periodIgre == 5 && domacinGost == 2) { popuniIzvestaj(statistika.StatistikaGostujucegTima[Cetvrtina.Cetvrta]); }
+            else if (periodIgre == 1 && domacinGost == 1) { popuniIzvestajCelaUtakmica(statistika, "D"); }
+            else if (periodIgre == 1 && domacinGost == 2) { popuniIzvestajCelaUtakmica(statistika, "G"); }
+
+        }
+
+        private void popuniIzvestajCelaUtakmica(StatistikaUtakmice statistika, String domacinGost)
+        {
+            dataGridView1.Rows.Clear();
+            List<StatistikaTima> statistike = new List<StatistikaTima>();
+            if (domacinGost == "D")
+            {
+                foreach (StatistikaTima st in statistika.StatistikaDomacegTima.Values) { statistike.Add(st); }
+            }
+            else if (domacinGost == "G")
+            {
+                foreach (StatistikaTima st in statistika.StatistikaGostujucegTima.Values) { statistike.Add(st); }
+            }
+            int timskiSkokNapad = 0;
+            int timskiSkokOdbrana = 0;
+            int timskiOsvojenaLopta = 0;
+            int timskiIzgubljenaLopta = 0;
+            int brojTimeouta = 0;
+            int tehnickaTrenera = 0;
+            int tehnickaKlupe = 0;
+            int brojNapada = 0;
+
+            foreach (StatistikaTima st in statistike)
+            {
+                timskiSkokNapad += st.TimskiSkokNapad;
+                timskiSkokOdbrana += st.TimskiSkokOdbrana;
+                timskiOsvojenaLopta += st.TimskiOsvojenaLopta;
+                brojTimeouta += st.BrojTimeOuta;
+                tehnickaTrenera += st.TehnickaGreskaTrenera;
+                tehnickaKlupe += st.TehnickaGreskaKlupa;
+                brojNapada += st.BrojNapada;
+                foreach (int br in st.TimskiIzgubljenaLopta.Values) { timskiIzgubljenaLopta += br; }
+            }
+
+            this.label36.Text = timskiSkokNapad.ToString();
+            this.label35.Text = timskiSkokOdbrana.ToString();
+            this.label34.Text = timskiOsvojenaLopta.ToString();
+            this.label33.Text = timskiIzgubljenaLopta.ToString();
+            this.label40.Text = brojTimeouta.ToString();
+            this.label39.Text = tehnickaTrenera.ToString();
+            this.label38.Text = tehnickaKlupe.ToString();
+            this.label37.Text = brojNapada.ToString();
+
+            
+            Dictionary<String, Dictionary<String, int>> recnikVrednosti = new Dictionary<string, Dictionary<string, int>>();
+            foreach(StatistikaTima s in statistike)
+            {
+                foreach (KeyValuePair<String, StatistikaIgraca> si in s.StatistikeIgraca)
+                {
+                    if (!recnikVrednosti.ContainsKey(si.Key))
+                    {
+                        recnikVrednosti.Add(si.Key, new Dictionary<string, int>());
+                        recnikVrednosti[si.Key].Add("da1", 0);
+                        recnikVrednosti[si.Key].Add("da2", 0);
+                        recnikVrednosti[si.Key].Add("da3", 0);
+                        recnikVrednosti[si.Key].Add("ne1", 0);
+                        recnikVrednosti[si.Key].Add("ne2", 0);
+                        recnikVrednosti[si.Key].Add("ne3", 0);
+                        recnikVrednosti[si.Key].Add("igracSkokNapad", 0);
+                        recnikVrednosti[si.Key].Add("igracSKokOdbrana", 0);
+                        recnikVrednosti[si.Key].Add("asistencija", 0);
+                        recnikVrednosti[si.Key].Add("licnaGreska", 0);
+                        recnikVrednosti[si.Key].Add("nesportskaGreska", 0);
+                        recnikVrednosti[si.Key].Add("igracTehnickaGreska", 0);
+                        recnikVrednosti[si.Key].Add("blokada", 0);
+                    }
+                    int da1 = 0;
+                    int da2 = 0;
+                    int da3 = 0;
+                    int ne1 = 0;
+                    int ne2 = 0;
+                    int ne3 = 0;
+                    for (int i = 0; i < si.Value.Sutevi.Count; i++)
+                    {
+                        if (si.Value.Sutevi[i].Pozicija == PozicijaSuta.SB)
+                        {
+                            if (si.Value.Sutevi[i].Pogodak) da1 += 1;
+                            else ne1 += 1;
+                        }
+                        else if (si.Value.Sutevi[i].Pozicija == PozicijaSuta.P12 || si.Value.Sutevi[i].Pozicija == PozicijaSuta.P22
+                            || si.Value.Sutevi[i].Pozicija == PozicijaSuta.P32 || si.Value.Sutevi[i].Pozicija == PozicijaSuta.P42
+                            || si.Value.Sutevi[i].Pozicija == PozicijaSuta.P52 || si.Value.Sutevi[i].Pozicija == PozicijaSuta.P62)
+                        {
+                            if (si.Value.Sutevi[i].Pogodak) da2 += 1;
+                            else ne2 += 1;
+                        }
+
+                        else if (si.Value.Sutevi[i].Pozicija == PozicijaSuta.P13 || si.Value.Sutevi[i].Pozicija == PozicijaSuta.P23
+                            || si.Value.Sutevi[i].Pozicija == PozicijaSuta.P33 || si.Value.Sutevi[i].Pozicija == PozicijaSuta.P43
+                            || si.Value.Sutevi[i].Pozicija == PozicijaSuta.P63)
+                        {
+                            if (si.Value.Sutevi[i].Pogodak) da3 += 1;
+                            else ne3 += 1;
+                        }
+                    }
+                    recnikVrednosti[si.Key]["da1"] += da1;
+                    recnikVrednosti[si.Key]["da2"] += da2;
+                    recnikVrednosti[si.Key]["da3"] += da3;
+                    recnikVrednosti[si.Key]["ne1"] += ne1;
+                    recnikVrednosti[si.Key]["ne2"] += ne2;
+                    recnikVrednosti[si.Key]["ne3"] += ne3;
+                    recnikVrednosti[si.Key]["igracSkokNapad"] += si.Value.SkokNapad;
+                    recnikVrednosti[si.Key]["igracSKokOdbrana"] += si.Value.SkokOdbrana;
+                    recnikVrednosti[si.Key]["asistencija"] += si.Value.Asistencija;
+                    recnikVrednosti[si.Key]["igracTehnickaGreska"] += si.Value.TehnickaGreska;
+                    recnikVrednosti[si.Key]["blokada"] += si.Value.Blokada;
+                    int licna = 0;
+                    int nesportska = 0;
+                    foreach (int i in si.Value.LicnaGreska.Values) licna += i;
+                    foreach (int i in si.Value.NesportskaGreska.Values) nesportska += i;
+                    recnikVrednosti[si.Key]["licnaGreska"] += licna;
+                    recnikVrednosti[si.Key]["nesportskaGreska"] += nesportska;
+
+                }
+            }
+
+            foreach(KeyValuePair<String, Dictionary<String, int>> dic in recnikVrednosti)
+            {
+                dataGridView1.Rows.Add(dic.Key, dic.Value["da2"].ToString() + "/" + (dic.Value["da2"] + dic.Value["ne2"]).ToString(),
+                    dic.Value["da3"].ToString() + "/" + (dic.Value["ne3"] + dic.Value["da3"]).ToString(), dic.Value["da1"].ToString() + 
+                    "/" + (dic.Value["ne1"] + dic.Value["da1"]).ToString(), dic.Value["igracSKokOdbrana"].ToString(),
+                    dic.Value["igracSkokNapad"].ToString(), dic.Value["asistencija"].ToString(), dic.Value["licnaGreska"].ToString(),
+                    dic.Value["nesportskaGreska"].ToString(), dic.Value["igracTehnickaGreska"].ToString(), dic.Value["blokada"].ToString());
+            }
+            
+
+        }
+
+        private void popuniIzvestaj(StatistikaTima statistika)
+        {
+            dataGridView1.Rows.Clear();
+            int rez = 0;
+            foreach (int n in statistika.TimskiIzgubljenaLopta.Values) { rez += n; }
+            this.label36.Text = statistika.TimskiSkokNapad.ToString();
+            this.label35.Text = statistika.TimskiSkokOdbrana.ToString();
+            this.label34.Text = statistika.TimskiOsvojenaLopta.ToString();
+            this.label33.Text = rez.ToString();
+            this.label40.Text = statistika.BrojTimeOuta.ToString();
+            this.label39.Text = statistika.TehnickaGreskaTrenera.ToString();
+            this.label38.Text = statistika.TehnickaGreskaKlupa.ToString();
+            this.label37.Text = statistika.BrojNapada.ToString();
+
+            foreach(KeyValuePair<String, StatistikaIgraca> si in statistika.StatistikeIgraca)
+            {
+                int da1 = 0;
+                int da2 = 0;
+                int da3 = 0;
+                int ne1 = 0;
+                int ne2 = 0;
+                int ne3 = 0;
+                for(int i = 0; i < si.Value.Sutevi.Count; i++)
+                {
+                    if(si.Value.Sutevi[i].Pozicija == PozicijaSuta.SB)
+                    {
+                        if (si.Value.Sutevi[i].Pogodak) da1 += 1;
+                        else ne1 += 1;
+                    }
+                    else if (si.Value.Sutevi[i].Pozicija == PozicijaSuta.P12 || si.Value.Sutevi[i].Pozicija == PozicijaSuta.P22 
+                        || si.Value.Sutevi[i].Pozicija == PozicijaSuta.P32 || si.Value.Sutevi[i].Pozicija == PozicijaSuta.P42 
+                        || si.Value.Sutevi[i].Pozicija == PozicijaSuta.P52 || si.Value.Sutevi[i].Pozicija == PozicijaSuta.P62)
+                    {
+                        if (si.Value.Sutevi[i].Pogodak) da2 += 1;
+                        else ne2 += 1;
+                    }
+
+                    else if (si.Value.Sutevi[i].Pozicija == PozicijaSuta.P13 || si.Value.Sutevi[i].Pozicija == PozicijaSuta.P23
+                        || si.Value.Sutevi[i].Pozicija == PozicijaSuta.P33 || si.Value.Sutevi[i].Pozicija == PozicijaSuta.P43
+                        || si.Value.Sutevi[i].Pozicija == PozicijaSuta.P63)
+                    {
+                        if (si.Value.Sutevi[i].Pogodak) da3 += 1;
+                        else ne3 += 1;
+                    }
+                }
+                int lg = 0;
+                foreach (int l in si.Value.LicnaGreska.Values)
+                {
+                    lg += l;
+                }
+                int ng = 0;
+                foreach (int n in si.Value.NesportskaGreska.Values)
+                {
+                    ng += n;
+                }
+                dataGridView1.Rows.Add(si.Key, da2.ToString() + "/" + (da2+ne2).ToString(), da3.ToString() + "/" + (ne3+da3).ToString(), da1.ToString() + "/" + (ne1 + da1).ToString(), si.Value.SkokOdbrana.ToString(), 
+                    si.Value.SkokNapad.ToString(), si.Value.Asistencija.ToString(), lg.ToString(), ng.ToString(), si.Value.TehnickaGreska.ToString(), si.Value.Blokada.ToString());
+            }
+        }
+
+        private int periodIgre()
+        {
+            if (radioButton5.Checked == true) return 1;
+            else if (radioButton6.Checked == true) return 2;
+            else if (radioButton7.Checked == true) return 3;
+            else if (radioButton8.Checked == true) return 4;
+            else return 5;
+        }
+
+        private int domacinGost()
+        {
+            if (this.radioButton10.Checked == true) return 1;
+            else return 2;
+        }
+
 
         private Cetvrtina trenutnaCetvrtina()
         {
@@ -234,6 +473,9 @@ namespace BasketballStatistics
             this.panel2.Controls.Remove(this.panel4);
             this.panel2.Controls.Remove(this.panel5);
             this.panel2.Controls.Remove(this.panel6);
+            this.panel2.Controls.Remove(this.panel7);
+            this.button29.Visible = false;
+            this.button66.Visible = false;
             this.comboBox3.Items.Clear();
             this.comboBox4.Items.Clear();
             Aplikacija.PrijavljeniKorisnik = null;
@@ -558,6 +800,56 @@ namespace BasketballStatistics
         private void label23_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button66_Click(object sender, EventArgs e)
+        {
+            // 
+
+            if (this.comboBox2.SelectedItem != null)
+            {
+                // inicijalizacija panela za vodjenje statistike
+                this.pripremiPanel7(this.comboBox1.SelectedItem.ToString(), this.comboBox2.SelectedItem.ToString());
+            }
+            else
+            {
+                // ispisi poruku o gresci
+            }
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+            this.pripremiPanel7(Aplikacija.takmicenjeNaPregledu, Aplikacija.utakmicaNaPregledu);
+        }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+            this.pripremiPanel7(Aplikacija.takmicenjeNaPregledu, Aplikacija.utakmicaNaPregledu);
+        }
+
+        private void radioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+            this.pripremiPanel7(Aplikacija.takmicenjeNaPregledu, Aplikacija.utakmicaNaPregledu);
+        }
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+            this.pripremiPanel7(Aplikacija.takmicenjeNaPregledu, Aplikacija.utakmicaNaPregledu);
+        }
+
+        private void radioButton9_CheckedChanged(object sender, EventArgs e)
+        {
+            this.pripremiPanel7(Aplikacija.takmicenjeNaPregledu, Aplikacija.utakmicaNaPregledu);
+        }
+
+        private void radioButton10_CheckedChanged(object sender, EventArgs e)
+        {
+            this.pripremiPanel7(Aplikacija.takmicenjeNaPregledu, Aplikacija.utakmicaNaPregledu);
+        }
+
+        private void radioButton11_CheckedChanged(object sender, EventArgs e)
+        {
+            this.pripremiPanel7(Aplikacija.takmicenjeNaPregledu, Aplikacija.utakmicaNaPregledu);
         }
     }
 }
